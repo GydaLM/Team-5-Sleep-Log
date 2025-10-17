@@ -1,7 +1,7 @@
 const model = {
     app:{
         currentPage:'homepage',
-        pages: ['homepage','loglist','logInput','statistics',],
+        pages: ['homepage','loglist','logInput','statistics','logIn'],
         curretUser:'',
     },
     //Her kommer viewstate
