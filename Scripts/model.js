@@ -1,5 +1,6 @@
 const model = {
     app:{
+        main: document.getElementById('main'),
         currentPage:'homepage',
         pages: ['homepage','loglist','logInput','statistics','logIn'],
         curretUser:'',
