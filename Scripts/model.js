@@ -3,7 +3,7 @@ const model = {
         main: document.getElementById('main'),
         currentPage:'homepage',
         pages: ['homepage','loglist','logInput','statistics','logIn'],
-        curretUser:'',
+        currentUser:'',
     },
     //Her kommer viewstate
     viewstate:{
