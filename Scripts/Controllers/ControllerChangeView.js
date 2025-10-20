@@ -2,15 +2,15 @@
 
 changeView()
 function changeView(){
-    if(currentpage == 'homepage'){
+    if(currentPage == 'homepage'){
         model.app.main.innerHTML = updateHomepage();
-    } else if(currentpage == 'loglist'){
+    } else if(currentPage == 'loglist'){
         model.app.main.innerHTML = updateLogList();
-    } else if(currentpage == 'logInput'){
+    } else if(currentPage == 'logInput'){
         model.app.main.innerHTML = updateLogInput();
-    }else if(currentpage == 'statistics'){
+    }else if(currentPage == 'statistics'){
         model.app.main.innerHTML = updateStatistics();
-    }else if(currentpage == 'logIn'){
+    }else if(currentPage == 'logIn'){
         model.app.main.innerHTML = updateLogIn();
     } else {
         return /*HTML*/`
