@@ -12,13 +12,16 @@
 //--------------------------------onclick functions for sidebar buttons
 function changeViewToHomepage() {
     currentpage = 'homepage';
+    changeView();
 }
 function changeViewToLogList() {
     currentpage = 'loglist';
+    changeView();
 }
-//function changeViewToStatistics() {currentpage = 'statistics';}
+//function changeViewToStatistics() {currentpage = 'statistics' changeView();}
 function changeViewToLogIn() {
     //need some log out funtion?
     //current user = ''; ?
     currentpage = 'logIn';
+    changeView();
 }
