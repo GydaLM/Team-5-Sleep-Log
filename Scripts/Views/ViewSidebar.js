@@ -1,4 +1,8 @@
-model.app.main.innerHTML = SideBar();
+//------Remy
+
+
+
+//model.app.main.innerHTML = SideBar();
 
 function SideBar(){
     return /*HTML*/ `
