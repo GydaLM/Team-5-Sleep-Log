@@ -28,6 +28,7 @@ const model = {
             notes:'',
         },
         optimalSleep:'',
+        sidebarOpen: true,
     },
     //Her kommer data
     data:{
