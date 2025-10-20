@@ -11,17 +11,17 @@
 
 //--------------------------------onclick functions for sidebar buttons
 function changeViewToHomepage() {
-    currentPage = 'homepage';
+    model.app.currentPage = 'homepage';
     changeView();
 }
 function changeViewToLogList() {
-    currentPage = 'loglist';
+    model.app.currentPage = 'loglist';
     changeView();
 }
 //function changeViewToStatistics() {currentpage = 'statistics' changeView();}
 function changeViewToLogIn() {
     //need some log out funtion?
     //current user = ''; ?
-    currentPage = 'logIn';
+    model.app.currentPage = 'logIn';
     changeView();
 }
