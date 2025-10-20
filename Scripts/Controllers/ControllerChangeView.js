@@ -1,3 +1,5 @@
+//-----------------Lene
+
 function changeView(){
     if(currentpage == 'homepage'){
         model.app.main.innerHTML = updateHomepage();
