@@ -1,6 +1,6 @@
 //-----------------Lene
 
-changeView()
+changeView();
 function changeView(){
     if(currentPage == 'homepage'){
         model.app.main.innerHTML = updateHomepage();
