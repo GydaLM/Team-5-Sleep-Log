@@ -3,7 +3,7 @@ const model = {
         main: document.getElementById('main'),
         currentPage:'homepage',
         pages: ['homepage','loglist','logInput','statistics','logIn'],
-        currentUser:'',
+        currentUser: 1,
     },
     //Her kommer viewstate
     viewstate:{
@@ -28,6 +28,7 @@ const model = {
             notes:'',
         },
         optimalSleep:'',
+        sidebarOpen: true,
     },
     //Her kommer data
     data:{
@@ -52,6 +53,7 @@ const model = {
                         gotUp:'07:15',
                         sleepDisturbed:'1',
                         timeDisturbed:'15',
+                        timeSleptNum: 465,
                         timeSlept:'7t 45min',
                         timeInBed:'9t 15min',
                         napTime:'25',
@@ -70,7 +72,8 @@ const model = {
                         gotUp:'07:15',
                         sleepDisturbed:'1',
                         timeDisturbed:'15',
-                        timeSlept:'7t 45min',
+                        timeSleptNum: 475,
+                        timeSlept:'7t 55min',
                         timeInBed:'9t 15min',
                         napTime:'25',
                         quality: 3,
@@ -94,6 +97,7 @@ const model = {
                         gotUp:'07:15',
                         sleepDisturbed:'1',
                         timeDisturbed:'15',
+                        timeSleptNum: 465,
                         timeSlept:'7t 45min',
                         timeInBed:'9t 15min',
                         napTime:'25',
