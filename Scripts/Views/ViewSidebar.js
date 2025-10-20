@@ -1,4 +1,4 @@
-//model.app.main.innerHTML = SideBar();
+model.app.main.innerHTML = SideBar();
 
 function SideBar(){
     return /*HTML*/ `
@@ -6,22 +6,23 @@ function SideBar(){
         <div>
 
             <button onclick="">
-                <img src="" alt=""/>
+                <img src="Media/home.png" alt=""/>
             </button>
 
             <button onclick="">
-                <img src="" alt=""/>
+                <img src="Media/log.png" alt=""/>
             </button>
 
             <button onclick="">
-                <img src="" alt=""/>
+                <img src="Media/logOff.png" alt=""/>
             </button>
 
         </div>
-    </section>
-    
+    </section> 
     `
 }
+
+
 
 /*
 anbefaling: 
