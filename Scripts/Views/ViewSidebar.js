@@ -5,15 +5,15 @@ function SideBar(){
     <section class="sidebar-container">
         <div>
 
-            <button onclick="">
+            <button onclick="changeViewToHomepage()">
                 <img src="Media/home.png" alt=""/>
             </button>
 
-            <button onclick="">
+            <button onclick="changeViewToLogList()">
                 <img src="Media/log.png" alt=""/>
             </button>
 
-            <button onclick="">
+            <button onclick="changeViewToLogIn()">
                 <img src="Media/logOff.png" alt=""/>
             </button>
 
