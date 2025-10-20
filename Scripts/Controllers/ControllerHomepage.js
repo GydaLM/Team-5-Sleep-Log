@@ -5,7 +5,8 @@
 
 const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
 console.log(currentUserLogs)
-function averageQuality(){
+averageLength()
+function averageLength(){
     let sum = 0;
     for(let log of currentUserLogs.lists){
         console.log(log.timeSleptNum)
@@ -21,9 +22,17 @@ function averageQuality(){
     return {hours, minutes};
 }
 averageQuality()
-function averageLength(){
-
+function averageQuality(){
+    let sum = 0;
+    for(let log of currentUserLogs.lists){
+        console.log(log.quality)
+        sum += log.quality;
+    }
+    let avg = sum/currentUserLogs.lists.length;
+    console.log('average quality:', avg);
+    return avg;
 }
+averageCondition()
 function averageCondition(){
 
 }

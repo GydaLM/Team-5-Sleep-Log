@@ -28,7 +28,7 @@ const model = {
             notes:'',
         },
         optimalSleep:'',
-        sidebarOpen: true,
+        //sidebarOpen: true,
     },
     //Her kommer data
     data:{
@@ -76,8 +76,8 @@ const model = {
                         timeSlept:'7t 55min',
                         timeInBed:'9t 15min',
                         napTime:'25',
-                        quality: 3,
-                        condition: 4,
+                        quality: 3.5,
+                        condition: 5,
                         notes:'Veldig deilig søvn',
                     },
                 ],
