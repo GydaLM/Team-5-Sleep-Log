@@ -1,8 +1,8 @@
 //----Gyda
 
 //average is the sum of the numbers divided on the amount of numbers
-//functions to find average of sleep quality, sleep length and condition during the day
 
+//functions to find average of sleep quality, sleep length and condition during the day
 const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
 console.log(currentUserLogs)
 averageLength()
@@ -42,6 +42,12 @@ function averageCondition(){
     let avg = sum/currentUserLogs.lists.length;
     console.log('average condition:', avg);
     return avg;
+}
+
+//function to change current page to logInput
+function changeToLogInput(){
+    currentPage = 'logInput';
+    changeView();
 }
 
 // // Hvis registeredLogs har flere instanser av userId: 1, så kommer den til å bare finne den første
