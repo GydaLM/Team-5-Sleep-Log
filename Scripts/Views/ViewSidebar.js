@@ -2,7 +2,7 @@
 
 
 
-//model.app.main.innerHTML = SideBar();
+model.app.main.innerHTML = SideBar();
 
 function SideBar(){
     return /*HTML*/ `
