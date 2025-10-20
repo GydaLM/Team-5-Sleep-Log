@@ -46,7 +46,7 @@ function averageCondition(){
 
 //function to change current page to logInput
 function changeToLogInput(){
-    currentPage = 'logInput';
+    model.app.currentPage = 'logInput';
     changeView();
 }
 
