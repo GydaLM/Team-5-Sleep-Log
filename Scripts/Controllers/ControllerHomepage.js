@@ -1,3 +1,5 @@
+//----Gyda
+
 //average is the sum of the numbers divided on the amount of numbers
 //functions to find average of sleep quality, sleep length and condition during the day
 
@@ -11,9 +13,14 @@ function averageQuality(){
         console.log('total sleep time:', sum)
     }
     let avg = sum/currentUserLogs.lists.length;
-    console.log('average sleep time:', avg);
-    return avg;
+    console.log('average sleep time in minutes:', avg);
+    //finds the average in hours and then converts the remaining time into a round number
+    const hours = Math.floor(avg/60);
+    const minutes = Math.round(avg % 60);
+    console.log(`Average sleep time ${hours}h ${minutes}min`);
+    return {hours, minutes};
 }
+averageQuality()
 function averageLength(){
 
 }
