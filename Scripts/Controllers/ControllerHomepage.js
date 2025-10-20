@@ -34,7 +34,14 @@ function averageQuality(){
 }
 averageCondition()
 function averageCondition(){
-
+    let sum = 0;
+    for(let log of currentUserLogs.lists){
+        console.log(log.condition)
+        sum += log.condition;
+    }
+    let avg = sum/currentUserLogs.lists.length;
+    console.log('average condition:', avg);
+    return avg;
 }
 
 // // Hvis registeredLogs har flere instanser av userId: 1, så kommer den til å bare finne den første
