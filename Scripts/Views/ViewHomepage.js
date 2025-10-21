@@ -1,3 +1,4 @@
+//-- Marius
 function updateHomepage(){
     return /*HTML*/ `
     <div>${SideBar()}</div>
