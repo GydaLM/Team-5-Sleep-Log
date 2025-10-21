@@ -8,14 +8,14 @@ function updateLogInput(){
 <input type="date">
 
     <div class="inputWrap">
-        <h3>Leggetid:</h3><input>
-        <h3>Prøvde å sovne:</h3><input>
-        <h3>Sovnet:</h3><input>
+        <h3>Leggetid:</h3><input type="time">
+        <h3>Prøvde å sovne:</h3><input type="time">
+        <h3>Sovnet:</h3><input type="time">
     </div>
 <br>
     <div class="inputWrap">
-        <h3>Våknet:</h3><input>
-        <h3>Sto på:</h3><input>
+        <h3>Våknet:</h3><input type="time">
+        <h3>Sto opp:</h3><input type="time">
     </div>
 <br>
     <div class="inputWrap">
