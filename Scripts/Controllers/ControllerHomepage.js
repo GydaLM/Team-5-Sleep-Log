@@ -35,7 +35,9 @@ function averageQuality(){
     }
     let avg = sum/count;
     console.log('average quality:', avg);
-    return avg;
+    //Rounds the decimal to only be whole number or 0.5
+    let avgRound = Math.round(avg*2)/2;
+    return avgRound;
 }
 averageCondition()
 function averageCondition(){
@@ -48,7 +50,8 @@ function averageCondition(){
     }
     let avg = sum/count;
     console.log('average condition:', avg);
-    return avg;
+    let avgRound = Math.round(avg*2)/2;
+    return avgRound;
 }
 
 //function to change current page to logInput
