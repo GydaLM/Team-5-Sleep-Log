@@ -1,0 +1,21 @@
+#mainHomepageDiv{
+    width: 60%;
+    height: 900px;
+    border-color: black;
+    border: 2px solid;
+    
+}
+.avgDisplayHomepage{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+#statsHomepage{
+    display: flex;
+}
