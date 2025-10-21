@@ -19,3 +19,7 @@ function changeView(){
     }
 }
 
+function changeViewToLogInput(){
+    model.app.currentPage = 'logInput';
+    changeView();
+}
