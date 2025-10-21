@@ -15,7 +15,7 @@ function changeViewToHomepage() {
     changeView();
 }
 function changeViewToLogList() {
-    model.app.currentPage = 'loglist';
+    model.app.currentPage = 'logList';
     changeView();
 }
 //function changeViewToStatistics() {currentpage = 'statistics' changeView();}
