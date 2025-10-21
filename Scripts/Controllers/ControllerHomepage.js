@@ -7,13 +7,16 @@ const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === m
 console.log(currentUserLogs)
 averageLength()
 function averageLength(){
+    let count = 0;
     let sum = 0;
-    for(let log of currentUserLogs.lists){
+    //slice -7 takes the last 7 and makes sure it jumps out after that
+    for(let log of currentUserLogs.lists.slice(-7)){
         console.log(log.timeSleptNum)
         sum += log.timeSleptNum;
         console.log('total sleep time:', sum)
+        count++
     }
-    let avg = sum/currentUserLogs.lists.length;
+    let avg = sum/count;
     console.log('average sleep time in minutes:', avg);
     //finds the average in hours and then converts the remaining time into a round number
     const hours = Math.floor(avg/60);
@@ -23,23 +26,27 @@ function averageLength(){
 }
 averageQuality()
 function averageQuality(){
+    let count = 0;
     let sum = 0;
-    for(let log of currentUserLogs.lists){
+    for(let log of currentUserLogs.lists.slice(-7)){
         console.log(log.quality)
         sum += log.quality;
+        count++
     }
-    let avg = sum/currentUserLogs.lists.length;
+    let avg = sum/count;
     console.log('average quality:', avg);
     return avg;
 }
 averageCondition()
 function averageCondition(){
+    let count = 0;
     let sum = 0;
-    for(let log of currentUserLogs.lists){
+    for(let log of currentUserLogs.lists.slice(-7)){
         console.log(log.condition)
         sum += log.condition;
+        count++
     }
-    let avg = sum/currentUserLogs.lists.length;
+    let avg = sum/count;
     console.log('average condition:', avg);
     return avg;
 }
