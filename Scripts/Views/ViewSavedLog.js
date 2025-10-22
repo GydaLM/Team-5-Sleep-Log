@@ -1,4 +1,4 @@
-function savedLog(){
+function updateSavedLog(){
     return /*HTML*/ `
     <div>${SideBar()}</div>
     <h1>Here is your selected log</h1>
