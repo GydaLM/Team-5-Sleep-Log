@@ -3,10 +3,10 @@
 //average is the sum of the numbers divided on the amount of numbers
 
 //functions to find average of sleep quality, sleep length and condition during the day
-const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
-console.log(currentUserLogs)
 averageLength()
 function averageLength(){
+    const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
+    console.log(currentUserLogs)
     let count = 0;
     let sum = 0;
     //slice -7 takes the last 7 and makes sure it jumps out after that
@@ -26,6 +26,7 @@ function averageLength(){
 }
 averageQuality()
 function averageQuality(){
+    const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
     let count = 0;
     let sum = 0;
     for(let log of currentUserLogs.lists.slice(-7)){
@@ -41,6 +42,7 @@ function averageQuality(){
 }
 averageCondition()
 function averageCondition(){
+    const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
     let count = 0;
     let sum = 0;
     for(let log of currentUserLogs.lists.slice(-7)){
