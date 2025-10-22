@@ -27,6 +27,7 @@ const model = {
             condition:'',
             notes:'',
         },
+        selectedLog: 1,
         optimalSleep:'',
         //sidebarOpen: true,
     },

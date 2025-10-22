@@ -13,6 +13,8 @@ function updateLogList(){
         </tr>
         ${drawLogTable()}
     </table>
+    <br>
+    <button onclick='changeViewToLogInput()'>Ny logg</button>
 `
 }
 
@@ -21,7 +23,7 @@ function drawLogTable(){
     let html='';
     for(let log of currentUserLogs.lists){
         html+=/*HTML*/`
-        <tr>
+        <tr onclick='changeToSelectedLog(${log.logID})'>
             <td>${log.date}</td>
             <td>${log.quality}</td>
             <td>${log.condition}</td>
@@ -30,4 +32,11 @@ function drawLogTable(){
         `
     }
     return html;
+}
+
+function changeToSelectedLog(selectedLogID){
+    model.viewstate.selectedLog = selectedLogID;
+    model.app.currentPage = 'savedLog';
+
+    changeView()
 }
