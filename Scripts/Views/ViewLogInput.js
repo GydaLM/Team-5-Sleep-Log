@@ -5,12 +5,12 @@ function updateLogInput(){
     <div>${SideBar()}</div>
     <div>This is the LogInput!</div>
 
-    <input type="date" onchange="saveRegisterLogBedtime(this.value)">
+    <input type="date" onchange="">
 
     <div class="inputWrap">
-        <label for="bedtime">Leggetid:</label><input id="bedtime" type="time">
-        <label for="attemptedSleep">Prøvde å sovne:</label><input id="attemptedSleep" type="time">
-        <label for="fellAsleep">Sovnet:</label><input id="fellAsleep" type="time">
+        <label for="bedtime">Leggetid:</label><input id="bedtime" type="time" oninput="saveRegisterLogBedtime(this.value)">
+        <label for="attemptedSleep">Prøvde å sovne:</label><input id="attemptedSleep" type="time" oninput="saveAttemptedSleep(this.value)">
+        <label for="fellAsleep">Sovnet:</label><input id="fellAsleep" type="time" oninput="saveFellAsleep(this.value)">
     </div>
 <br>
     <div class="inputWrap">
