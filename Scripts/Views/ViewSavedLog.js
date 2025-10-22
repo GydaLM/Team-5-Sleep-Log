@@ -1,0 +1,6 @@
+function savedLog(){
+    return /*HTML*/ `
+    <div>${SideBar()}</div>
+    <h1>Here is your selected log</h1>
+    `
+}
