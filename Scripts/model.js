@@ -1,7 +1,7 @@
 const model = {
     app:{
         main: document.getElementById('main'),
-        currentPage:'logInput',
+        currentPage:'homepage',
         pages: ['homepage','logList','logInput','statistics','logIn'],
         currentUser: 1,
     },
