@@ -78,6 +78,6 @@ function emptyRegisterLog(){
 
 }
 
-function generateRandomID(){
-    return Math.floor(Math.random() * 999)
-}
+//function generateRandomID(){                
+//    return Math.floor(Math.random() * 999)
+//}
