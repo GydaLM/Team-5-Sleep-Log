@@ -45,7 +45,7 @@ const model = {
                     //første logg
                     {
                         logID: 1,
-                        date: 2025-10-10,
+                        date: '2025-10-10',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -64,7 +64,7 @@ const model = {
                     //andre logg
                     {
                         logID: 2,   
-                        date: 2025-10-11,
+                        date: '2025-10-11',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -82,7 +82,7 @@ const model = {
                     },
                     {
                         logID: 3,   
-                        date: 2025-10-12,
+                        date: '2025-10-12',
                         bedtime:'21:00',
                         attemptedSleep:'21:30',
                         fellAsleep:'22:00',
@@ -100,7 +100,7 @@ const model = {
                     },
                     {
                         logID: 4,   
-                        date: 2025-10-13,
+                        date: '2025-10-13',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -118,7 +118,7 @@ const model = {
                     },
                     {
                         logID: 5,   
-                        date: 2025-10-14,
+                        date: '2025-10-14',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -136,7 +136,7 @@ const model = {
                     },
                     {
                         logID: 6,   
-                        date: 2025-10-15,
+                        date: '2025-10-15',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -154,7 +154,7 @@ const model = {
                     },
                     {
                         logID: 7,   
-                        date: 2025-10-16,
+                        date: '2025-10-16',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -172,7 +172,7 @@ const model = {
                     },
                     {
                         logID: 8,   
-                        date: 2025-10-17,
+                        date: '2025-10-17',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
@@ -197,7 +197,7 @@ const model = {
                     //første logg
                     {
                         logID: 1,
-                        date: 2025-10-21,
+                        date: '2025-10-21',
                         bedtime:'22:00',
                         attemptedSleep:'22:30',
                         fellAsleep:'23:00',
