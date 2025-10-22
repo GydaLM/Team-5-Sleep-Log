@@ -25,14 +25,16 @@ function updateLogInput(){
     </div>
 <br>
     <div class="inputWrap">
-        <h3>Kvalitet</h3><input>
-        <h3>Dagsform</h3><input>
+        <label for="quality">Kvalitet</label><input id="quality">
+        <label for="condition">Dagsform</label><input id="condition">
     </div>
 <br>
-    <div class="inputWrap">
-        <h3>Notater:</h3><input>
+    <div class="notesWrap">
+        <label for="notes">Notater:</label><input id="notes">
     </div>
 <br>
     <button>Lagre</button>
 `
 }
+
+console.log()

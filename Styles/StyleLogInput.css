@@ -5,3 +5,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.notesWrap{
+    background-color: #959595;
+    color: black;
+    width: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+
+}
