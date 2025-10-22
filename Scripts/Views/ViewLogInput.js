@@ -5,7 +5,7 @@ function updateLogInput(){
     <div>${SideBar()}</div>
     <div>This is the LogInput!</div>
 
-    <input type="date" onchange="saveRegisterLogBedtime(value)">
+    <input type="date" onchange="saveRegisterLogBedtime(this.value)">
 
     <div class="inputWrap">
         <label for="bedtime">Leggetid:</label><input id="bedtime" type="time">
