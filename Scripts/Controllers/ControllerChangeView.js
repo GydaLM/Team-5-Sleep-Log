@@ -12,6 +12,8 @@ function changeView(){
         model.app.main.innerHTML = updateStatistics();
     }else if(model.app.currentPage == 'logIn'){
         model.app.main.innerHTML = updateLogIn();
+    }else if(model.app.currentPage == 'savedLog'){
+        model.app.main.innerHTML = updateSavedLog();
     } else {
         return /*HTML*/`
         <h1>Error: no currentpage</h1>
