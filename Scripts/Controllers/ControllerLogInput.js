@@ -7,6 +7,10 @@ function saveRegisterLogBedtime(value){
     model.viewstate.registerLog.bedtime = value;
 }
 
+function saveDate(value){
+    model.viewstate.registerLog.date = value;
+}
+
 function saveAttemptedSleep(value){
     model.viewstate.registerLog.attemptedSleep = value;
 }
@@ -54,7 +58,7 @@ function saveNewLog(){
         model.data.registeredLogs[i].lists.push(
             {
                 logID: generateRandomID(),
-                date:'', //litt usikker på om noe skal legges inn i Date
+                date: model.viewstate.registerLog.date,
                 bedtime: model.viewstate.registerLog.bedtime,
                 attemptedSleep: model.viewstate.registerLog.attemptedSleep,
                 fellAsleep: model.viewstate.registerLog.fellAsleep,
