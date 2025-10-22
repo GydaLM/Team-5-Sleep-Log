@@ -33,6 +33,6 @@ function updateLogInput(){
         <label for="notes">Notater:</label><input id="notes" oninput="saveNotes(this.value)">
     </div>
 <br>
-    <button>Lagre</button>
+    <button onclick="saveNewLog()">Lagre</button>
 `
 }
