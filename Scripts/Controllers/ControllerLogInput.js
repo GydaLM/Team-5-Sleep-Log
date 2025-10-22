@@ -57,7 +57,7 @@ function saveNewLog(){
       if(model.data.registeredLogs[i].userID == model.app.currentUser){
         model.data.registeredLogs[i].lists.push(
             {
-                logID: generateRandomID(),
+                logID: 10,
                 date: model.viewstate.registerLog.date,
                 bedtime: model.viewstate.registerLog.bedtime,
                 attemptedSleep: model.viewstate.registerLog.attemptedSleep,
