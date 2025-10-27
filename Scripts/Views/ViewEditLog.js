@@ -1,3 +1,5 @@
+//---Gyda
+
 function updateEditLog(){
     const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
     const logToShow = currentUserLogs.lists.find(log => log.logID === Number(model.viewstate.selectedLog));
