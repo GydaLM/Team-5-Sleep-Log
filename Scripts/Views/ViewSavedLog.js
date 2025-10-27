@@ -38,5 +38,6 @@ function updateSavedLog(){
             <p>Notater: ${logToShow.notes}</p>
         </div>
     </div>
+    <button onclick="changeViewToLogList()">Tilbake</button>
     `
 }
