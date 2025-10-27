@@ -2,7 +2,6 @@
 
 function updateLogList(){
     return /*HTML*/ `
-    <div>${SideBar()}</div>
     <h1>Din søvnlogg</h1>
     <table style="width:75%">
         <tr>
@@ -32,11 +31,4 @@ function drawLogTable(){
         `
     }
     return html;
-}
-
-function changeToSelectedLog(selectedLogID){
-    model.viewstate.selectedLog = selectedLogID;
-    model.app.currentPage = 'savedLog';
-
-    changeView()
 }
