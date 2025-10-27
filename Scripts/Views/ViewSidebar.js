@@ -7,15 +7,15 @@ function SideBar(){
     <section class="sidebar-container">
         <div>
 
-            <button onclick="changeViewToHomepage()">
+            <button onclick="goTo('homepage')">
                 <img src="Media/home.png" alt=""/>
             </button>
 
-            <button onclick="changeViewToLogList()">
+            <button onclick="goTo('logList')">
                 <img src="Media/log.png" alt=""/>
             </button>
 
-            <button onclick="changeViewToLogIn()">
+            <button onclick="goTo('logIn')">
                 <img src="Media/logOff.png" alt=""/>
             </button>
 

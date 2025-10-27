@@ -10,18 +10,15 @@
 //}
 
 //--------------------------------onclick functions for sidebar buttons
-function changeViewToHomepage() {
-    model.app.currentPage = 'homepage';
-    changeView();
-}
-function changeViewToLogList() {
-    model.app.currentPage = 'logList';
-    changeView();
-}
-//function changeViewToStatistics() {currentpage = 'statistics' changeView();}
-function changeViewToLogIn() {
-    //need some log out funtion?
-    //current user = ''; ?
-    model.app.currentPage = 'logIn';
-    changeView();
-}
+
+
+//---------------------------------Chosen button
+
+// function chosenView() {
+// if (currentPage == 'homepage'){
+//     color button backgrond
+// }
+
+// }
+
+// changeView(medParameter)

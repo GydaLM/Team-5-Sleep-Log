@@ -10,6 +10,6 @@ function updateHomepage(){
             <div class='avgDisplayHomepage'>Dagsform <br> ${averageCondition()}/5</div>
         </div>
     </div>
-    <div id='newLogHomepage' onclick='changeViewToLogInput()'>Ny logg</div>
+    <div id='newLogHomepage' onclick="goTo('logInput')">Ny logg</div>
 `
 }
