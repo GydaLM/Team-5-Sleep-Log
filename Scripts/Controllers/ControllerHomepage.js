@@ -57,10 +57,10 @@ function averageCondition(){
 }
 
 //function to change current page to logInput
-function changeToLogInput(){
-    model.app.currentPage = 'logInput';
-    changeView();
-}
+// function changeToLogInput(){
+//     model.app.currentPage = 'logInput';
+//     changeView();
+// }
 
 // // Hvis registeredLogs har flere instanser av userId: 1, så kommer den til å bare finne den første
 // // Finner objektet og loggene til bruker som er "innlogget" med currentUser

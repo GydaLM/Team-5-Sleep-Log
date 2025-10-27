@@ -1,6 +1,6 @@
 //---Gyda
 
-function changeViewToEditLog(){
-    model.app.currentPage = 'editLog';
-    changeView();
-}
+// function changeViewToEditLog(){
+//     model.app.currentPage = 'editLog';
+//     changeView();
+// }
