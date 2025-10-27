@@ -2,7 +2,6 @@
 
 function updateLogInput(){
     return /*HTML*/ `
-    <div>${SideBar()}</div>
 
     <input type="date" onchange="saveDate(this.value)">
 

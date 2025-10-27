@@ -1,7 +1,6 @@
 //-- Marius
 function updateHomepage(){
     return /*HTML*/ `
-    <div>${SideBar()}</div>
     <div>This is the Homepage!</div>
     <div id='mainHomepageDiv'>
         <div>Gjennomsnitt de siste syv loggene</div>

@@ -1,8 +1,6 @@
 //------Remy
 
-
-
-//model.app.main.innerHTML = SideBar();
+document.getElementById("sidebar").innerHTML= SideBar();
 
 function SideBar(){
     return /*HTML*/ `
