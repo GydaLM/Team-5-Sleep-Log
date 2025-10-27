@@ -2,7 +2,7 @@ const model = {
     app:{
         main: document.getElementById('main'),
         currentPage:'homepage',
-        pages: ['homepage','logList','logInput','statistics','logIn', 'savedLog'],
+        pages: ['homepage','logList','logInput','statistics','logIn', 'savedLog', 'editLog',],
         currentUser: 1,
     },
     //Her kommer viewstate

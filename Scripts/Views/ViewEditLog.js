@@ -1,11 +1,6 @@
-function updateSavedLog(){
+function updateEditLog(){
     const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
-
-    if(!currentUserLogs) return `<p>Ingen logger funnet</p>`
-    
     const logToShow = currentUserLogs.lists.find(log => log.logID === Number(model.viewstate.selectedLog));
-
-    if(!logToShow) return `<p>Fant ikke loggen!</p>`
 
     return /*HTML*/ `
     <h1>Søvnlogg for ${logToShow.date}</h1>
@@ -36,7 +31,7 @@ function updateSavedLog(){
         <div class="notesWrap">
             <p>Notater: ${logToShow.notes}</p>
         </div>
-    <button onclick="changeViewToEditLog()">Rediger</button>
+    <button onclick="">Lagre</button>
     <button onclick="changeViewToLogList()">Tilbake</button>
     `
 }
