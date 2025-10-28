@@ -76,7 +76,7 @@ function saveNewLog(){
       }  
     } 
     emptyRegisterLog()
-    model.app.currentPage = 'editLog';
+    model.app.currentPage = 'logList';
     changeView()
 }
 
