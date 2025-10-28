@@ -5,6 +5,7 @@
 
 function saveRegisterLogBedtime(value){
     model.viewstate.registerLog.bedtime = value;
+    console.log(value);
 }
 
 function saveDate(value){
@@ -75,6 +76,8 @@ function saveNewLog(){
       }  
     } 
     emptyRegisterLog()
+    model.app.currentPage = 'editLog';
+    changeView()
 }
 
 function emptyRegisterLog(){
