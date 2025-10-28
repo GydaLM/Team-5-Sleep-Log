@@ -38,7 +38,7 @@ function updateSavedLog(){
         <div class="notesWrap">
             <p>Notater: ${logToShow.notes}</p>
         </div>
-    <button onclick="goTo('editLog')">Rediger</button>
+    <button onclick="changeToEditMode()">Rediger</button>
     <button onclick="goTo('logList')">Tilbake</button>
     `
 }
