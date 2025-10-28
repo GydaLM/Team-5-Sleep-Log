@@ -7,6 +7,11 @@ const model = {
     },
     //Her kommer viewstate
     viewstate:{
+        logIn: {
+            name:'',
+            password:'',
+        },
+
         average:{
             averageQuality:'',
             averageLength:'', 
