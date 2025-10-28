@@ -1,3 +1,5 @@
 body{
+    display: grid;
     justify-items: center;
+    white-space: nowrap;
 }

@@ -1,0 +1,19 @@
+table, tr, td, th{
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 4px;
+}
+td{
+    text-align: right;
+}
+th{
+    border: 1px solid grey;
+}
+tr:nth-child(even){
+    background: darkgrey;
+}
+tr:nth-child(odd){
+    background: lightgrey;
+}
