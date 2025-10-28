@@ -17,9 +17,9 @@ function updateLogInput(){
     </div>
 <br>
     <div class="inputWrap">
-        <label for="timeDisturbed">Våknet i natt:</label><input id="timeDisturbed" type="number" oninput="saveSleepDisturbed(parse = Number(this.value)">
-        <label for="timeawaken">Tid våken:</label><input id="timeawaken" type="number" oninput="saveTimeDisturbed(parse = Number(this.value)">
-        <label for="napTime">Lur-tid:</label><input id="napTime" type="number" oninput="saveNapTime(parse = Number(this.value)">
+        <label for="timeDisturbed">Våknet i natt:</label><input id="timeDisturbed" type="number" oninput="saveSleepDisturbed(parse = Number(this.value))">
+        <label for="timeawaken">Tid våken:</label><input id="timeawaken" type="number" oninput="saveTimeDisturbed(parse = Number(this.value))">
+        <label for="napTime">Lur-tid:</label><input id="napTime" type="number" oninput="saveNapTime(parse = Number(this.value))">
     </div>
 <br>
     <div class="inputWrap">
