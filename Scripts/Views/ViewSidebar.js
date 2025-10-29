@@ -15,6 +15,10 @@ function SideBar(){
                 <img src="Media/log.png" alt=""/>
             </button>
 
+            <button onclick="goTo('statistics')">
+                <img src="Media/statisticsBar.png" alt=""/>
+            </button>
+
             <button onclick="goTo('logIn')">
                 <img src="Media/logOff.png" alt=""/>
             </button>
