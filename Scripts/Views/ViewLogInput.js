@@ -22,9 +22,45 @@ function updateLogInput(){
         <label for="napTime">Lur-tid:</label><input id="napTime" type="number" oninput="saveNapTime(parse = Number(this.value))">
     </div>
 <br>
-    <div class="inputWrap">
-        <label for="quality">Kvalitet</label><input id="quality" oninput="saveQuality(parse = Number(this.value))">
-        <label for="condition">Dagsform</label><input id="condition" oninput="saveCondition(parse = Number(this.value))">
+    <div  class="inputWrap">
+        <p>Kvalitet (5 er best):</p>
+        <form>
+            <!-- 1 -->
+            <input type="radio" id="very bad" name="quality" value="1" oninput="saveQuality(this.value)">
+            <label for="very bad">1</label>
+            <!-- 2 -->
+            <input type="radio" id="bad" name="quality" value="2" oninput="saveQuality(this.value)">
+            <label for="bad">2</label>
+            <!-- 3 -->
+            <input type="radio" id="neutral" name="quality" value="3" oninput="saveQuality(this.value)">
+            <label for="neutral">3</label>
+            <!-- 4 -->
+            <input type="radio" id="good" name="quality" value="4" oninput="saveQuality(this.value)">
+            <label for="good">4</label>
+            <!-- 5 -->
+            <input type="radio" id="very good" name="quality" value="5" oninput="saveQuality(this.value)">
+            <label for="very good">5</label>
+        </form>
+    </div>
+    <div  class="inputWrap">
+        <p>Dagsform (5 er best):</p>
+        <form>
+            <!-- 1 -->
+            <input type="radio" id="very bad" name="quality" value="1" class="hide" oninput="saveCondition(this.value)">
+            <label for="very bad">1</label>
+            <!-- 2 -->
+            <input type="radio" id="bad" name="quality" value="2" oninput="saveCondition(this.value)">
+            <label for="bad">2</label>
+            <!-- 3 -->
+            <input type="radio" id="neutral" name="quality" value="3" oninput="saveCondition(this.value)">
+            <label for="neutral">3</label>
+            <!-- 4 -->
+            <input type="radio" id="good" name="quality" value="4" oninput="saveCondition(this.value)">
+            <label for="good">4</label>
+            <!-- 5 -->
+            <input type="radio" id="very good" name="quality" value="5" oninput="saveCondition(this.value)">
+            <label for="very good">5</label>
+        </form>
     </div>
 <br>
     <div class="notesWrap">
