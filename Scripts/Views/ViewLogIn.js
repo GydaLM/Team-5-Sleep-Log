@@ -3,8 +3,8 @@ function updateLogIn(){
     <div>This is the Log In!</div>
     
     <div>
-    <input oninput="model.viewstate.logIn.name = this.value">
-    <input oninput="model.viewstate.logIn.password = this.value">
+    <input placeholder="Brukernavn" oninput="model.viewstate.logIn.name = this.value">
+    <input type="password" id="passwordField" placeholder="Passord" oninput="model.viewstate.logIn.password = this.value">
     <button onclick="logIn()">Log in</button>
 
 
