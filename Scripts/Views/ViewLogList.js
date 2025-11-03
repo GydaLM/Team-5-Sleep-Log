@@ -21,12 +21,17 @@ function drawLogTable(){
     const currentUserLogs = model.data.registeredLogs.find(logs => logs.userID === model.app.currentUser);
     let html='';
     for(let log of currentUserLogs.lists){
+        const date = log.date || '-';
+        const quality = log.quality || '-';
+        const condition = log.condition || '-';
+        const timeSlept = log.timeSlept || '-';
+
         html+=/*HTML*/`
         <tr onclick='changeToSelectedLog(${log.logID})'>
-            <td>${log.date}</td>
-            <td>${log.quality}</td>
-            <td>${log.condition}</td>
-            <td>${log.timeSlept}</td>
+            <td>${date}</td>
+            <td>${quality}</td>
+            <td>${condition}</td>
+            <td>${timeSlept}</td>
         </tr>
         `
     }

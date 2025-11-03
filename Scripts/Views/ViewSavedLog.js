@@ -9,6 +9,9 @@ function updateSavedLog(){
 
     if(!logToShow) return `<p>Fant ikke loggen!</p>`
 
+    const timeInBed = logToShow.timeInBed || '-';
+    const timeSlept = logToShow.timeSlept || '-';
+
     return /*HTML*/ `
     <h1>Søvnlogg for ${logToShow.date}</h1>
         <div class="inputWrap">
@@ -29,8 +32,8 @@ function updateSavedLog(){
         </div>
     <br>
         <div class="inputWrap">
-            <p>Tid i seng: ${logToShow.timeInBed}</p>
-            <p>Tid sovet: ${logToShow.timeSlept}</p>
+            <p>Tid i seng: ${timeInBed}</p>
+            <p>Tid sovet: ${timeSlept}</p>
             <p>Kvalitet: ${logToShow.quality}</p>
             <p>Dagsform: ${logToShow.condition}</p>
         </div>

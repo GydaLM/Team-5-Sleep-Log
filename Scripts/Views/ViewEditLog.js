@@ -25,8 +25,18 @@ function updateEditLog(){
         <div class="inputWrap">
             <p>Tid i seng: ${log.timeInBed}</p>
             <p>Tid sovet: ${log.timeSlept}</p>
-            <p>Kvalitet: <input type="number" value="${log.quality}" oninput="model.viewstate.editLog.quality=this.value"></p>
-            <p>Dagsform: <input type="number" value="${log.condition}" oninput="model.viewstate.editLog.condition=this.value"></p>
+        </div>
+        <div  class="inputWrap">
+            <p>Kvalitet (5 er best):</p>
+            <form>
+                ${radioButtons('quality', log.quality)}
+            </form>
+        </div>
+        <div  class="inputWrap">
+            <p>Dagsform (5 er best):</p>
+            <form>
+                ${radioButtons('condition', log.condition)}
+            </form>
         </div>
         <br>
         <div class="notesWrap">
@@ -36,6 +46,22 @@ function updateEditLog(){
         <button onclick="saveEditedLog()">Lagre</button>
         <button onclick="goTo('savedLog')">Avbryt</button>
     `
+}
+
+function radioButtons(type, value){
+    let tempArray = ['very bad', 'bad', 'neutral', 'good', 'very good'];
+    let html = '';
+    for(let i=1; i<=5; i++){
+        const checked = (Number(value) === i) ? 'checked' : '';
+        const id = `${type}-${tempArray[i-1]}`;
+
+        html += /*HTML*/`            
+            <input type="radio" id="${id}" name="${type}" value="${i}" ${checked} 
+                oninput="model.viewstate.editLog.${type}=Number(this.value)">
+            <label for="${id}">${i}</label>
+            `
+    }
+    return html;
 }
 
 // function updateEditLog(){
