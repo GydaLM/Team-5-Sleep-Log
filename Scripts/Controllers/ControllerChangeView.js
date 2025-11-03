@@ -12,7 +12,7 @@ function changeView(){
         model.app.main.innerHTML = updateStatistics();
     }else if(model.app.currentPage == 'logIn'){
         model.app.main.innerHTML = updateLogIn();
-        currentUser = null;
+        model.app.currentUser = null;
     }else if(model.app.currentPage == 'savedLog'){
         model.app.main.innerHTML = updateSavedLog();
     }else if(model.app.currentPage == 'editLog'){
