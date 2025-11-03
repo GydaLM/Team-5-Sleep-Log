@@ -4,7 +4,6 @@ function updateHomepage(){
     const conditionClass = getColour(averageCondition());
     
     return /*HTML*/ `
-    <div>This is the Homepage!</div>
     <div id='mainHomepageDiv'>
         <div>Gjennomsnitt de siste syv loggene</div>
         <div id='statsHomepage'>
