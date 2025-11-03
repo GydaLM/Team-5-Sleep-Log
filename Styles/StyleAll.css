@@ -3,3 +3,13 @@ body{
     justify-items: center;
     white-space: nowrap;
 }
+
+.green{
+    background-color: #8db98d;
+}
+.yellow{
+    background-color: #debd84;
+}
+.red{
+    background-color: #d1807f;
+}

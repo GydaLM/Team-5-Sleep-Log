@@ -12,6 +12,9 @@ function updateSavedLog(){
     const timeInBed = logToShow.timeInBed || '-';
     const timeSlept = logToShow.timeSlept || '-';
 
+    const qualityClass = getColour(logToShow.quality);
+    const conditionClass = getColour(logToShow.condition);
+
     return /*HTML*/ `
     <h1>Søvnlogg for ${logToShow.date}</h1>
         <div class="inputWrap">
@@ -34,8 +37,8 @@ function updateSavedLog(){
         <div class="inputWrap">
             <p>Tid i seng: ${timeInBed}</p>
             <p>Tid sovet: ${timeSlept}</p>
-            <p>Kvalitet: ${logToShow.quality}</p>
-            <p>Dagsform: ${logToShow.condition}</p>
+            <p class="${qualityClass}">Kvalitet: ${logToShow.quality}</p>
+            <p class="${conditionClass}">Dagsform: ${logToShow.condition}</p>
         </div>
     <br>
         <div class="notesWrap">

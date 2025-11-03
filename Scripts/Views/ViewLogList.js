@@ -26,11 +26,13 @@ function drawLogTable(){
         const condition = log.condition || '-';
         const timeSlept = log.timeSlept || '-';
 
+        const qualityClass = getColour(quality);
+        const conditionClass = getColour(condition);
         html+=/*HTML*/`
         <tr onclick='changeToSelectedLog(${log.logID})'>
             <td>${date}</td>
-            <td>${quality}</td>
-            <td>${condition}</td>
+            <td class="${qualityClass}">${quality}</td>
+            <td class="${conditionClass}">${condition}</td>
             <td>${timeSlept}</td>
         </tr>
         `
