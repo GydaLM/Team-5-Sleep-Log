@@ -1,17 +1,16 @@
-.sidebar-container{
+header{
     position: fixed;
+    top: 0;
     left: 0;
-    top: 50%;
+    width: 100%;
 }
 
 .sidebar-container div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: rgb(189, 186, 186);
-    border-radius: 0 2em 2em 0;
-    padding: 20px;
 }
 
 .sidebar-container div button{
@@ -23,6 +22,6 @@
 }
 
 .sidebar-container img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
