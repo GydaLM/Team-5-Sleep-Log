@@ -9,11 +9,11 @@ td{
     text-align: right;
 }
 th{
-    border: 1px solid grey;
+    border: 1px solid #d7c8e7;
 }
 tr:nth-child(even){
-    background: #B89EDA;
+    background: #9874cd;
 }
 tr:nth-child(odd){
-    background: #d7c8e7;
+    background: #b89eda;
 }

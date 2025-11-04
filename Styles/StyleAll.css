@@ -6,7 +6,10 @@ body{
 
 .content{
     margin-top: 150px;
+    padding: 25px;
     background-color: #d7c8e7;
+    width: 50vw;
+    justify-items: center;
 }
 p{
     margin: 5px;
@@ -24,6 +27,6 @@ p{
 /*Midlertidig fargevalg for gjennomgående felles tema*/
 .hovedfarger{
     color: #9874cd;
-    border-color: #B89EDA;
+    border-color: #b89eda;
     background-color: #d7c8e7;
 }
