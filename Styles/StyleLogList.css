@@ -17,3 +17,10 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background: #b89eda;
 }
+.nyLoggBtn{
+    background-color: #b89eda;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}

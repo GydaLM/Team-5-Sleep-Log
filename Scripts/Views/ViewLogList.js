@@ -13,7 +13,7 @@ function updateLogList(){
         ${drawLogTable()}
     </table>
     <br>
-    <button onclick="goTo('logInput')">Ny logg</button>
+    <button class="nyLoggBtn" onclick="goTo('logInput')">Ny logg</button>
 `
 }
 
