@@ -46,7 +46,6 @@ const model = {
             notes:'',
         },
         optimalSleep:'',
-        darkMode: true,
     },
     //Her kommer data
     data:{

@@ -21,13 +21,20 @@ function SideBar(){
             <button onclick="goTo('logIn')">
                 <img src="Media/logOff.png" alt=""/>
             </button>
-
+        ${drawDarkLightButton()}
         </div>
     </section> 
     `
 }
 
-
+function drawDarkLightButton(){
+    if(darkMode){
+        return /*HTML*/`<button id="darkLightButton" onclick="toggleLightDark()">Lysmodus</button>`
+    }
+    else{
+        return /*HTML*/`<button id="darkLightButton" onclick="toggleLightDark()">Mørkmodus</button>`
+    }
+}
 
 /*
 anbefaling: 

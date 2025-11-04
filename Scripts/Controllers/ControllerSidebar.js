@@ -1,9 +1,17 @@
 //---Gyda
 
+let darkMode = false;
 function toggleLightDark(){
-    
+    darkMode = !darkMode;
+    if(darkMode){
+        document.body.style.backgroundColor = '#2c2d31';
+        document.getElementById('darkLightButton').textContent = 'Lysmodus';
+    }
+    else{
+        document.body.style.backgroundColor = '';
+        document.getElementById('darkLightButton').textContent = 'Mørkmodus';
+    }
 }
-
 
 
 //-----------------Lene
