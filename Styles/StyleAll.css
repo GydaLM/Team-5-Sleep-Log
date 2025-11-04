@@ -4,6 +4,10 @@ body{
     white-space: nowrap;
 }
 
+.content{
+    margin-top: 150px;
+}
+
 .green{
     background-color: #d9ead3;
 }

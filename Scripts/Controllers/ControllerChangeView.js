@@ -40,7 +40,7 @@ function changeView(){
     model.app.main.innerHTML = /*HTML*/`
         <main>
             <header>${sidebar}</header>
-            <section>${content}</section>
+            <section class="content">${content}</section>
         </main>
     `;
 }
