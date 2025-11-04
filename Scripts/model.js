@@ -30,6 +30,9 @@ const model = {
             quality:'',
             condition:'',
             notes:'',
+            timeSleptNum: '',
+            timeSlept: '',
+            timeInBed: '',
         },
         selectedLog: 1,
         editLog:{      
