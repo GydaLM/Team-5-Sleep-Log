@@ -7,8 +7,8 @@ function updateHomepage(){
     <div id='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>
-            <div class='avgDisplayHomepage ${qualityClass}'>Søvn Kvalitet <br> ${averageQuality()}/5</div>
-            <div class='avgDisplayHomepage'>Søvn lengde <br>${averageLength().hours}t ${averageLength().minutes}min</div>
+            <div class='avgDisplayHomepage ${qualityClass}'>Søvnkvalitet <br> ${averageQuality()}/5</div>
+            <div class='avgDisplayHomepage'>Søvnlengde <br>${averageLength().hours}t ${averageLength().minutes}min</div>
             <div class='avgDisplayHomepage ${conditionClass}'>Dagsform <br> ${averageCondition()}/5</div>
         </div>
     </div>
