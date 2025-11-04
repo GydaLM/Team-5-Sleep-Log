@@ -1,8 +1,5 @@
 //------ Remy (og Lene♥)
 
-//
-
-
 function saveRegisterLogBedtime(value){
     model.viewstate.registerLog.bedtime = value;
     console.log(value);
@@ -79,11 +76,9 @@ function saveNewLog(){
         let timeSleptNum = awoken - fellAsleep - model.viewstate.registerLog.timeDisturbed;
         let timeInBedNum = gotUp - bedtime;
 
-
-
         model.data.registeredLogs[i].lists.push(
             {
-                logID: 10,
+                logID: generateID(),
                 date: model.viewstate.registerLog.date,
                 bedtime: model.viewstate.registerLog.bedtime,
                 attemptedSleep: model.viewstate.registerLog.attemptedSleep,
@@ -118,6 +113,14 @@ function emptyRegisterLog(){
 function convertToMinutes(value){
     let [hours,minutes] = value.split(":").map((x) => Number(x));
     return hours * 60 + minutes;
+}
+
+function generateID(){
+for(let i = 0; i < model.data.registeredLogs.length; i++){
+if(model.data.registeredLogs[i].userID == model.app.currentUser){
+let logID = model.data.registeredLogs[i].lists.at(-1).logID + 1;
+return logID;}
+}
 }
 
 //function generateRandomID(){                
