@@ -1,4 +1,4 @@
-//------ Remy
+//------ Remy (og Lene♥)
 
 //
 
@@ -56,6 +56,31 @@ function saveNotes(value){
 function saveNewLog(){
     for(let i = 0; i < model.data.registeredLogs.length; i++){
       if(model.data.registeredLogs[i].userID == model.app.currentUser){
+
+        let bedtime = convertToMinutes(model.viewstate.registerLog.bedtime);
+        let fellAsleep = convertToMinutes(model.viewstate.registerLog.fellAsleep);
+        let awoken = convertToMinutes(model.viewstate.registerLog.awoken);
+        let gotUp=  convertToMinutes(model.viewstate.registerLog.gotUp);
+
+        //check if we fall asleep after midnight
+        if (bedtime > fellAsleep){
+            //move forward one day
+            fellAsleep += 24 * 60;
+        }
+        //repeat with the other variables
+
+        if (bedtime > awoken){
+            awoken += 24 * 60;
+        }
+        if (bedtime > gotUp){
+            gotUp += 24 * 60;
+        }
+
+        let timeSleptNum = awoken - fellAsleep - model.viewstate.registerLog.timeDisturbed;
+        let timeInBedNum = gotUp - bedtime;
+
+
+
         model.data.registeredLogs[i].lists.push(
             {
                 logID: 10,
@@ -71,6 +96,9 @@ function saveNewLog(){
                 quality: model.viewstate.registerLog.quality,
                 condition: model.viewstate.registerLog.condition,
                 notes: model.viewstate.registerLog.notes,
+                timeSleptNum: timeSleptNum,
+                timeSlept: `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`,
+                timeInBed: `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`,
             }
         )
       }  
@@ -83,6 +111,13 @@ function saveNewLog(){
 function emptyRegisterLog(){
     model.viewstate.registerLog.notes = '';
 
+}
+
+
+//converting the timeinput stirngs to minutes since midnight ----Lene
+function convertToMinutes(value){
+    let [hours,minutes] = value.split(":").map((x) => Number(x));
+    return hours * 60 + minutes;
 }
 
 //function generateRandomID(){                
