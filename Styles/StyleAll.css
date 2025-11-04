@@ -14,3 +14,9 @@ body{
 .red{
     background-color: #f4cccc;
 }
+
+/*Midlertidig fargevalg for gjennomgående felles tema*/
+.hovedfarger{
+    color: #9874cd;
+    background-color: #d7c8e7;
+}
