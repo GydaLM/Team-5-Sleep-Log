@@ -12,8 +12,8 @@ th{
     border: 1px solid grey;
 }
 tr:nth-child(even){
-    background: darkgrey;
+    background: #B89EDA;
 }
 tr:nth-child(odd){
-    background: lightgrey;
+    background: #d7c8e7;
 }

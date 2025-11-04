@@ -6,8 +6,11 @@ body{
 
 .content{
     margin-top: 150px;
+    background-color: #d7c8e7;
 }
-
+p{
+    margin: 5px;
+}
 .green{
     background-color: #d9ead3;
 }
