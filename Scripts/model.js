@@ -11,7 +11,6 @@ const model = {
             name:'',
             password:'',
         },
-
         average:{
             averageQuality:'',
             averageLength:'', 
@@ -47,7 +46,7 @@ const model = {
             notes:'',
         },
         optimalSleep:'',
-        //sidebarOpen: true,
+        darkMode: true,
     },
     //Her kommer data
     data:{

@@ -1,3 +1,11 @@
+//---Gyda
+
+function toggleLightDark(){
+    
+}
+
+
+
 //-----------------Lene
 
 //function sidebarToggle() {              // funskjon som åpner og lukker Sidebar-en
