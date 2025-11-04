@@ -60,7 +60,7 @@ function saveNewLog(){
         let bedtime = convertToMinutes(model.viewstate.registerLog.bedtime);
         let fellAsleep = convertToMinutes(model.viewstate.registerLog.fellAsleep);
         let awoken = convertToMinutes(model.viewstate.registerLog.awoken);
-        let gotUp=  convertToMinutes(model.viewstate.registerLog.gotUp);
+        let gotUp = convertToMinutes(model.viewstate.registerLog.gotUp);
 
         //check if we fall asleep after midnight
         if (bedtime > fellAsleep){
