@@ -6,7 +6,7 @@ function updateEditLog(){
     return /*HTML*/ `
         <h1>Rediger søvnlogg for ${log.date}</h1>
         <div class="inputWrap">
-            <p>Dato: <input type="date" value="${log.date}" onchange="saveDate(this.value)">
+            <p>Dato: <input type="date" value="${log.date}" oninput="model.viewstate.editLog.date=this.value">
             <p>Leggetid: <input type="time" value="${log.bedtime}" oninput="model.viewstate.editLog.bedtime=this.value"></p>
             <p>Prøvde å sovne: <input type="time" value="${log.attemptedSleep}" oninput="model.viewstate.editLog.attemptedSleep=this.value"></p>
             <p>Sovnet: <input type="time" value="${log.fellAsleep}" oninput="model.viewstate.editLog.fellAsleep=this.value"></p>

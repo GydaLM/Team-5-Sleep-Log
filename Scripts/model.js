@@ -35,7 +35,8 @@ const model = {
             timeInBed: '',
         },
         selectedLog: 1,
-        editLog:{      
+        editLog:{
+            date: '',      
             bedtime:'',
             attemptedSleep:'',
             fellAsleep:'',
