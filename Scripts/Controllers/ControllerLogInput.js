@@ -112,8 +112,7 @@ function saveNewLog(){
                 condition: model.viewstate.registerLog.condition,
                 notes: model.viewstate.registerLog.notes,
                 timeSleptNum: timeSleptNum,
-                timeSlept: calculateTimeSlept,
-                timeInBed: calculateTimeInBed,
+                timeInBedNum: timeInBedNum,
             }
         )
       }  
