@@ -121,7 +121,7 @@ function saveNewLog(){
         )
       }  
     } 
-    emptyRegisterLog() // legg til de andre og så alt tømmes og ikke bare notes
+    emptyRegisterLog() 
     model.app.currentPage = 'logList';
     changeView()
 }
@@ -141,9 +141,9 @@ function emptyRegisterLog(){
     model.viewstate.registerLog.quality = '';
     model.viewstate.registerLog.condition = '';
     model.viewstate.registerLog.notes = '';
-    timeSleptNum = '';
-    calculateTimeSlept = '';
-    calculateTimeInBed = '';
+    model.viewstate.registerLog.timeSleptNum = '';
+    model.viewstate.registerLog.timeSlept = '';
+    model.viewstate.registerLog.timeInBed = '';
 
 }
 
