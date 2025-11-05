@@ -39,3 +39,9 @@ header{
     width: 30px;
     height: 30px;
 }
+
+.dark-mode-button-img{
+   
+    background-image: url(../Media/darkMode.png);
+ 
+}
