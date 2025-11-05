@@ -74,27 +74,30 @@ function saveNewLog(){
         }
 
         let timeSleptNum = awoken - fellAsleep - model.viewstate.registerLog.timeDisturbed;
+        console.log(timeSleptNum);
         let timeInBedNum = gotUp - bedtime;
 
-        // console.log('bedtime:', bedtime);
-        // console.log('fellAsleep:', fellAsleep);
-        // console.log('awoken:', awoken);
-        // console.log('gotUp:', gotUp);
-        // console.log('timeSleptNum:', timeSleptNum);
-        // console.log('timeInBedNum:', timeInBedNum);
+        console.log('bedtime:', bedtime);
+        console.log('fellAsleep:', fellAsleep);
+        console.log('awoken:', awoken);
+        console.log('gotUp:', gotUp);
+        console.log('timeSleptNum:', timeSleptNum);
+        console.log('timeInBedNum:', timeInBedNum);
 
-        // if(isNaN(timeSleptNum)){
-        //     timeSleptNum = '';
-        // }
-        // let calculateTimeSlept = `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`;
+        let calculateTimeSlept = '';
+        let calculateTimeInBed = '';
 
-        // if(isNaN(calculateTimeSlept)){
-        //     calculateTimeSlept = '';
-        // }
-        // let calculateTimeInBed = `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`;
-        // if(isNaN(calculateTimeInBed)){
-        //     calculateTimeInBed = '';
-        // }
+        if(isNaN(timeSleptNum)){
+            timeSleptNum = '';
+        }else{
+            calculateTimeSlept = `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`;
+        }
+
+        if(isNaN(timeInBedNum)){
+            timeInBedNum = '';
+        }else{
+            calculateTimeInBed = `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`;
+        }
 
         model.data.registeredLogs[i].lists.push(
             {
@@ -112,8 +115,8 @@ function saveNewLog(){
                 condition: model.viewstate.registerLog.condition,
                 notes: model.viewstate.registerLog.notes,
                 timeSleptNum: timeSleptNum,
-                timeSlept: `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`,
-                timeInBed: `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`,
+                timeSlept: calculateTimeSlept,
+                timeInBed: calculateTimeInBed,
             }
         )
       }  
