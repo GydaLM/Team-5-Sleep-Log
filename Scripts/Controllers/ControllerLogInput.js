@@ -123,6 +123,7 @@ return logID;}
 }
 }
 
+
 //function generateRandomID(){                
 //    return Math.floor(Math.random() * 999)
 //}
