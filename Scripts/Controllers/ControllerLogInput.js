@@ -1,4 +1,4 @@
-//------ Remy (og Lene♥)
+//------ Remy (og Lene♥ og Gyda!)
 
 function saveRegisterLogBedtime(value){
     model.viewstate.registerLog.bedtime = value;
@@ -124,7 +124,23 @@ function saveNewLog(){
 }
 
 function emptyRegisterLog(){
+
+    model.viewstate.registerLog.logID = '';
+    model.viewstate.registerLog.date = '';
+    model.viewstate.registerLog.bedtime = '';
+    model.viewstate.registerLog.attemptedSleep = '';
+    model.viewstate.registerLog.fellAsleep = '';
+    model.viewstate.registerLog.awoken = '';
+    model.viewstate.registerLog.gotUp = '';
+    model.viewstate.registerLog.sleepDisturbed = '';
+    model.viewstate.registerLog.timeDisturbed = '';
+    model.viewstate.registerLog.napTime = '';
+    model.viewstate.registerLog.quality = '';
+    model.viewstate.registerLog.condition = '';
     model.viewstate.registerLog.notes = '';
+    timeSleptNum = '';
+    calculateTimeSlept = '';
+    calculateTimeInBed = '';
 
 }
 
