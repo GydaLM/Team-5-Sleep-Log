@@ -53,7 +53,7 @@ function logo(){
      return /*HTML*/ `
      <section>
 
-            <button id="logo" onclick="goTO('homepage')">
+            <button id="logo" onclick="goTo('homepage')">
                 <img src="Media/ShutEye_1.png" alt=""/>
             </button>
 
@@ -63,11 +63,11 @@ function logo(){
 
 
 function drawDarkLightButton(){
-    if(darkMode){
-        return /*HTML*/`<button id="darkLightButton" onclick="toggleLightDark()">Lysmodus</button>`
+    if(model.app.darkMode){
+        return /*HTML*/`<button id="darkLightButton" class="dark-mode-button-img img-sun" onclick="toggleLightDark()"></button>`
     }
     else{
-        return /*HTML*/`<button id="darkLightButton" onclick="toggleLightDark()">Mørkmodus</button>`
+        return /*HTML*/`<button id="darkLightButton" class="dark-mode-button-img img-moon" onclick="toggleLightDark()"></button>`
     }
 }
 

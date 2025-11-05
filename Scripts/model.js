@@ -4,6 +4,7 @@ const model = {
         currentPage:'homepage',
         pages: ['homepage','logList','logInput','statistics','logIn', 'savedLog', 'editLog',],
         currentUser: 1,
+        darkMode: false,
     },
     //Her kommer viewstate
     viewstate:{

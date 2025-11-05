@@ -33,6 +33,12 @@ header{
     border-radius: 50%;
     border: 1px solid black;
     background-color: transparent;
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar-container img{
@@ -40,8 +46,14 @@ header{
     height: 30px;
 }
 
-.dark-mode-button-img{
-   
+.img-moon{
     background-image: url(../Media/darkMode.png);
- 
+}
+.img-sun{
+    background-image: url(../Media/lightMode.png.png);
+}
+.dark-mode-button-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
