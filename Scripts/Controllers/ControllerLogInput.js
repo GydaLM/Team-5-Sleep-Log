@@ -76,6 +76,26 @@ function saveNewLog(){
         let timeSleptNum = awoken - fellAsleep - model.viewstate.registerLog.timeDisturbed;
         let timeInBedNum = gotUp - bedtime;
 
+        console.log('bedtime:', bedtime);
+        console.log('fellAsleep:', fellAsleep);
+        console.log('awoken:', awoken);
+        console.log('gotUp:', gotUp);
+        console.log('timeSleptNum:', timeSleptNum);
+        console.log('timeInBedNum:', timeInBedNum);
+
+        if(isNaN(timeSleptNum)){
+            timeSleptNum = '';
+        }
+        let calculateTimeSlept = `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`;
+
+        if(isNaN(calculateTimeSlept)){
+            calculateTimeSlept = '';
+        }
+        let calculateTimeInBed = `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`;
+        if(isNaN(calculateTimeInBed)){
+            calculateTimeInBed = '';
+        }
+
         model.data.registeredLogs[i].lists.push(
             {
                 logID: generateID(),
@@ -92,13 +112,13 @@ function saveNewLog(){
                 condition: model.viewstate.registerLog.condition,
                 notes: model.viewstate.registerLog.notes,
                 timeSleptNum: timeSleptNum,
-                timeSlept: `${Math.floor(timeSleptNum / 60)}t ${Math.round(timeSleptNum % 60)}min`,
-                timeInBed: `${Math.floor(timeInBedNum / 60)}t ${Math.round(timeInBedNum % 60)}min`,
+                timeSlept: calculateTimeSlept,
+                timeInBed: calculateTimeInBed,
             }
         )
       }  
     } 
-    emptyRegisterLog()
+    emptyRegisterLog() // legg til de andre og så alt tømmes og ikke bare notes
     model.app.currentPage = 'logList';
     changeView()
 }
