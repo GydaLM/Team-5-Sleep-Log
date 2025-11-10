@@ -25,6 +25,7 @@
     align-items: center;
     background-color: #b89eda;
     width: fit-content;
+    border-radius: 5px;
 }
 .optimalBedtimeBtn{
     background-color: #b89eda;
