@@ -11,6 +11,7 @@ button{
     padding: 25px;
     background-color: #d7c8e7;
     width: 50vw;
+    justify-items: center;
 }
 p{
     margin: 5px;
