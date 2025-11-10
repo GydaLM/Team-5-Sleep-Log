@@ -20,3 +20,10 @@
     border: 1px solid;
     cursor: pointer;
 }
+.optimalBedtimeBtn{
+    background-color: #b89eda;
+    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 5px;
+}

@@ -1,9 +1,23 @@
 //----Gyda
 
 function editOptimalBedtime(){
-
+    model.viewstate.editBedtime = true;
+    changeView()
 }
 
+function saveOptimalBedtime(){
+    const currentUser = model.data.registeredUser.find(user => user.userID === model.app.currentUser);
+    if(currentUser){
+        currentUser.optimalBedtime = model.viewstate.optimalBedtime;
+    }
+    model.viewstate.editBedtime = false;
+    emptyOptimalBedtime()
+    changeView()
+}
+
+function emptyOptimalBedtime(){
+    model.viewstate.optimalBedtime = '';
+}
 //average is the sum of the numbers divided on the amount of numbers
 
 //functions to find average of sleep quality, sleep length and condition during the day

@@ -1,10 +1,13 @@
 //-----------------Lene
 
 function updateLogInput(){
+    const currentUser = model.data.registeredUser.find(user => user.userID === model.app.currentUser);
+    const optimalBedtime = currentUser?.optimalBedtime || "-";
     return /*HTML*/ `
 <form>
     <input class="dateinput" type="date" onchange="saveDate(this.value)">
-
+    <br>
+    <label>Optimal leggetid: ${optimalBedtime}</label>
     <div class="inputWrap">
         <label for="bedtime">Leggetid:</label><input id="bedtime" type="time" oninput="saveRegisterLogBedtime(this.value)">
         <label for="attemptedSleep">Prøvde å sovne:</label><input id="attemptedSleep" type="time" oninput="saveAttemptedSleep(this.value)">
