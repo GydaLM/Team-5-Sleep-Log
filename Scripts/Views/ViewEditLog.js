@@ -4,6 +4,7 @@ function updateEditLog(){
     const log = model.viewstate.editLog;
 
     return /*HTML*/ `
+    <form>
         <h1>Rediger søvnlogg for ${log.date}</h1>
         <div class="inputWrap">
             <label for="editDate">Dato:</label><input id="editDate" type="date" value="${log.date}" oninput="model.viewstate.editLog.date=this.value">
@@ -29,15 +30,15 @@ function updateEditLog(){
         </div>
         <div  class="inputWrap radio">
             <p>Kvalitet (5 er best):</p>
-            <form>
+            <div>
                 ${radioButtons('quality', log.quality)}
-            </form>
+            </div>
         </div>
         <div  class="inputWrap radio">
             <p>Dagsform (5 er best):</p>
-            <form>
+            <div>
                 ${radioButtons('condition', log.condition)}
-            </form>
+            </div>
         </div>
 
         <div class="notesWrap">
@@ -46,6 +47,7 @@ function updateEditLog(){
         </div>
         <button class="SaveInputBtn" onclick="saveEditedLog()">Lagre</button>
         <button class="SaveInputBtn" onclick="goTo('savedLog')">Avbryt</button>
+    </form>
     `
 }
 
