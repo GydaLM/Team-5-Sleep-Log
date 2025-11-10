@@ -23,14 +23,22 @@ function drawOptimalBedtime(){
     
     if(!model.viewstate.editBedtime){
         return /*HTML*/ `
-        <label>Optimal leggetid: ${optimalBedtime}</label>
-        <button class="optimalBedtimeBtn" onclick="editOptimalBedtime()">Edit</button>
+        <section class="optimalBedtimeContainer">
+            <label class="noPointer">Optimal leggetid: ${optimalBedtime}</label>
+            <button class="optimalBedtimeBtn" onclick="editOptimalBedtime()">
+                <img src="Media/EditIcon.png" alt="Edit" width="15px" height="20px">
+            </button>
+        </section>
         `
     }
     else{
         return /*HTML*/ `
-        <label>Optimal leggetid: </label><input type="time" value="${optimalBedtime}" oninput="model.viewstate.optimalBedtime=this.value">
-        <button class="optimalBedtimeBtn" onclick="saveOptimalBedtime()">Save</button>
+        <section class="optimalBedtimeContainer">
+            <label class="noPointer">Optimal leggetid: </label><input type="time" value="${optimalBedtime}" oninput="model.viewstate.optimalBedtime=this.value">
+            <button class="optimalBedtimeBtn" onclick="saveOptimalBedtime()">
+                <img src="Media/SaveIcon.png" alt="Save" width="17px" height="20px">
+            </button>
+        </section>
         `
     }
 }
