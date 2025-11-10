@@ -3,26 +3,26 @@
 function updateLogInput(){
     return /*HTML*/ `
 <form>
-    <input type="date" onchange="saveDate(this.value)">
+    <input class="dateinput" type="date" onchange="saveDate(this.value)">
 
     <div class="inputWrap">
         <label for="bedtime">Leggetid:</label><input id="bedtime" type="time" oninput="saveRegisterLogBedtime(this.value)">
         <label for="attemptedSleep">Prøvde å sovne:</label><input id="attemptedSleep" type="time" oninput="saveAttemptedSleep(this.value)">
         <label for="fellAsleep">Sovnet:</label><input id="fellAsleep" type="time" oninput="saveFellAsleep(this.value)">
     </div>
-<br>
+
     <div class="inputWrap">
         <label for="awoken">Våknet:</label><input id="awoken" type="time" oninput="saveAwoken(this.value)">
         <label for="gotUp">Sto opp:</label><input id="gotUp" type="time" oninput="saveGotUp(this.value)">
     </div>
-<br>
+
     <div class="inputWrap">
         <label for="timeDisturbed">Våknet i natt (antall):</label><input id="timeDisturbed" type="number" oninput="saveSleepDisturbed(parse = Number(this.value))">
         <label for="timeawaken">Tid våken (minutter):</label><input id="timeawaken" type="number" oninput="saveTimeDisturbed(parse = Number(this.value))">
         <label for="napTime">Lur-tid (minutter):</label><input id="napTime" type="number" oninput="saveNapTime(parse = Number(this.value))">
     </div>
-<br>
-    <div  class="inputWrap">
+
+    <div  class="inputWrap radio">
         <p>Kvalitet (5 er best):</p>
         <div>
             <!-- 1 -->
@@ -42,7 +42,7 @@ function updateLogInput(){
             <label for="quality-very good">5</label>
         </div>
     </div>
-    <div  class="inputWrap">
+    <div  class="inputWrap radio">
         <p>Dagsform (5 er best):</p>
         <div>
             <!-- 1 -->
@@ -67,7 +67,7 @@ function updateLogInput(){
         <label for="notes">Notater:</label><input id="notes" oninput="saveNotes(this.value)">
     </div>
 <form>
-    <button onclick="saveNewLog()">Lagre</button>
+    <button class="SaveInputBtn" onclick="saveNewLog()">Lagre</button>
 `
 }
 
