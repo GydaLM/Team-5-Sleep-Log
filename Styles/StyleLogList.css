@@ -19,8 +19,8 @@ tr:nth-child(odd){
 }
 .nyLoggBtn{
     background-color: #b89eda;
-    border: none;
     padding: 10px 20px;
     font-size: 15px;
     border-radius: 5px;
+    border-color: #9874cd;
 }
