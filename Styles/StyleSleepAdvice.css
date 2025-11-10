@@ -1,3 +1,11 @@
 .informationBox{
-    box-sizing: content-box;
+    background-color: #b89eda;
+    border: 2px solid #9874cd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 10px;
+}
+.Overskrift{
+    font-size: 30px;
 }
