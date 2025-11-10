@@ -29,7 +29,7 @@ function drawOptimalBedtime(){
     }
     else{
         return /*HTML*/ `
-        <label>Optimal leggetid: </label><input type="time" oninput="model.viewstate.optimalBedtime=this.value">
+        <label>Optimal leggetid: </label><input type="time" value="${optimalBedtime}" oninput="model.viewstate.optimalBedtime=this.value">
         <button class="optimalBedtimeBtn" onclick="saveOptimalBedtime()">Save</button>
         `
     }
