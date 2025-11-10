@@ -6,10 +6,9 @@ function updateLogInput(){
     return /*HTML*/ `
 <form>
     <input class="dateinput" type="date" onchange="saveDate(this.value)">
-
-    <div class="inputWrap">
-        <p>Optimal leggetid:</p>
-        <p>${optimalBedtime}</p>
+    <br>
+    <div class="inputWrap optimalBedtimeWrap">
+        <p>Optimal leggetid: ${optimalBedtime}</p>
     </div>
     <div class="inputWrap">
         <label for="bedtime">Leggetid:</label><input id="bedtime" type="time" oninput="saveRegisterLogBedtime(this.value)">
