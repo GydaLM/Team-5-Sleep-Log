@@ -24,7 +24,7 @@ function SideBar(){
                 <img src="Media/log.png" alt=""/>
             </button>
 
-            <button onclick="goTo('statistics')">
+            <button onclick="goTo('sleepAdvice')">
                 <img src="Media/statisticsBar.png" alt=""/>
             </button>
 
