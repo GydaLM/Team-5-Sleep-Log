@@ -4,7 +4,7 @@ function updateLogInput(){
     const currentUser = model.data.registeredUser.find(user => user.userID === model.app.currentUser);
     const optimalBedtime = currentUser?.optimalBedtime || "-";
     return /*HTML*/ `
-<form class="boxwrap">
+<form>
     <input class="dateinput" type="date" onchange="saveDate(this.value)">
 
     <div class="inputWrap">
