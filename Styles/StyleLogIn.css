@@ -1,9 +1,12 @@
 .logoLoginPage{
-    padding: 5px;
-    margin: 5px;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
     color: #9874cd;
     position: fixed;
     top: 0;
     align-items: center;
+    align-items: top;
     font-family: "Lobster", sans-serif;
+    text-shadow: 2px 2px black;
 }
