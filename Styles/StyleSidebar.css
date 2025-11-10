@@ -5,16 +5,28 @@ header{
     width: 100%;
 }
 
+.logoSidebar{
+    padding: 5px;
+    margin: 0;
+    font-size: 65px;
+    color: #9874cd;
+    top: 0;
+    align-items: center;
+    font-family: "Lobster", sans-serif;
+}
+
 .sidebar-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    padding: 0px 3%;
+    padding: 0px 1%;
     background-color: rgb(189, 186, 186);
 }
 .sidebar-container .username-container{
+    font-size: 25px;
     justify-self: start;
+    align-items: start;
 }
 .sidebar-container div{
     display: flex;

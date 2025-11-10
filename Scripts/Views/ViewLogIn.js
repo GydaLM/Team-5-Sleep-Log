@@ -1,5 +1,10 @@
 function updateLogIn(){
     return /*HTML*/ `
+
+    <div class="logoLoginPage">
+        <h1>ShutEye<h1>
+    </div>
+
     <div>This is the Log In!</div>
     
     <div>

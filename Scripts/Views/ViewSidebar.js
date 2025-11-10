@@ -6,11 +6,11 @@ function SideBar(){
     <section class="sidebar-container">
         
         <div class="username-container">
-            <h3>Hei ${getUserName()}</h3>
+            <h3>Velkommen ${getUserName()}!</h3>
         </div>
 
         <div>
-            <h2>ShutEye</h2>
+            <h1 class="logoSidebar">ShutEye</h1>
         </div>
 
 
