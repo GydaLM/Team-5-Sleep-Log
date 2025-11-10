@@ -35,3 +35,7 @@
     border-radius: 5px;
     margin: 10px;
 }
+
+.saved{
+       grid-template-columns: 1fr;
+}

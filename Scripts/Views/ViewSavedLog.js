@@ -17,32 +17,34 @@ function updateSavedLog(){
 
     return /*HTML*/ `
     <h1>Søvnlogg for ${logToShow.date}</h1>
-        <div class="inputWrap">
+        <div class="inputWrap saved">
             <p>Leggetid: ${logToShow.bedtime}</p>
             <p>Prøvde å sovne: ${logToShow.attemptedSleep}</p>
             <p>Sovnet: ${logToShow.fellAsleep}</p>
         </div>
-    <br>
-        <div class="inputWrap">
+
+        <div class="inputWrap saved">
             <p>Våknet: ${logToShow.awoken}</p>
             <p>Stod opp: ${logToShow.gotUp}</p>
         </div>
-    <br>
-        <div class="inputWrap">
-            <p>Våknet i natt: ${logToShow.sleepDisturbed}</p>
-            <p>Tid våken: ${logToShow.timeDisturbed}</p>
-            <p>Lur-tid: ${logToShow.napTime}</p>
+
+        <div class="inputWrap saved">
+            <p>Våknet i natt: ${logToShow.sleepDisturbed} gang(er)</p>
+            <p>Tid våken: ${logToShow.timeDisturbed} minutter</p>
+            <p>Lur-tid: ${logToShow.napTime} minutter</p>
         </div>
-    <br>
+
         <div class="inputWrap">
             <p>Tid i seng: ${timeInBed}</p>
             <p>Tid sovet: ${timeSlept}</p>
+        </div>
+        <div class="inputWrap">
             <p class="${qualityClass}">Kvalitet: ${logToShow.quality}</p>
             <p class="${conditionClass}">Dagsform: ${logToShow.condition}</p>
         </div>
-    <br>
+
         <div class="notesWrap">
-            <p>Notater: ${logToShow.notes}</p>
+            <p>Notater: <br> ${logToShow.notes}</p>
         </div>
     <button onclick="changeToEditMode()">Rediger</button>
     <button onclick="goTo('logList')">Tilbake</button>
