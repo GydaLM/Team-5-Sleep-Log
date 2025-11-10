@@ -16,6 +16,7 @@ button{
     width: 50vw;
     min-width: fit-content;
     justify-items: center;
+    border-radius: 5px;
 }
 p{
     margin: 5px;
