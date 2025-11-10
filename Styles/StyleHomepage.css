@@ -5,9 +5,12 @@
     width: 200px;
     height: 200px;
     text-align: center;
-    margin: auto;
+    margin: 10px;
     display: grid;
     place-items: center;
+}
+.mainHomepageDiv{
+    text-align: center;
 }
 #statsHomepage{
     display: flex;

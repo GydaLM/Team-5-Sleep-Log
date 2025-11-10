@@ -5,7 +5,7 @@ function updateHomepage(){
     
     return /*HTML*/ `
     <div>${drawOptimalBedtime()}</div>
-    <div id='mainHomepageDiv'>
+    <div class='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>
             <div class='avgDisplayHomepage ${qualityClass}'>Søvnkvalitet <br> ${averageQuality()}/5</div>
