@@ -1,6 +1,6 @@
 .inputWrap{
     margin: 10px;
-    background-color: #9874cd;
+    background-color: #b89eda;
     color: black;
     width: fit-content;
     display: grid;
@@ -14,7 +14,7 @@
 }
 
 .notesWrap{
-    background-color: #9874cd;
+    background-color: #b89eda;
     color: black;
     width: fit-content;
     display: grid;
@@ -28,7 +28,7 @@
 }
 
 .SaveInputBtn{
-    background-color: #b89eda;
+    background-color: #9874cd;
     border: none;
     padding: 10px 20px;
     font-size: 15px;
@@ -38,4 +38,5 @@
 
 .saved{
     grid-template-columns: 1fr;
+
 }
