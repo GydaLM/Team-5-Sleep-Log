@@ -4,6 +4,7 @@ function updateHomepage(){
     const conditionClass = getColour(averageCondition());
     
     return /*HTML*/ `
+    <p>Optimal leggetid: <input type="time"></p>
     <div id='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>

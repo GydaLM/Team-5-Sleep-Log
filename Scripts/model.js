@@ -50,7 +50,7 @@ const model = {
             condition:'',
             notes:'',
         },
-        optimalSleep:'',
+        optimalBedtime:'',
     },
     //Her kommer data
     data:{
