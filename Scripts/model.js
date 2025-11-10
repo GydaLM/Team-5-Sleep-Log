@@ -2,7 +2,7 @@ const model = {
     app:{
         main: document.getElementById('main'),
         currentPage:'homepage',
-        pages: ['homepage','logList','logInput','statistics','logIn', 'savedLog', 'editLog',],
+        pages: ['homepage','logList','logInput','sleepAdvice','logIn', 'savedLog', 'editLog',],
         currentUser: 1,
         darkMode: false,
     },
@@ -55,8 +55,8 @@ const model = {
     //Her kommer data
     data:{
         registeredUser:[
-            {userID: 1, name:'Kenneth', password:'herSkalDetSoves', optimalSleep: 7,},
-            {userID: 2, name:'Bjarne', password:'007', optimalSleep: 10,},
+            {userID: 1, name:'Kenneth', password:'herSkalDetSoves', optimalBedtime: '22:00',},
+            {userID: 2, name:'Bjarne', password:'007', optimalBedtime: '23:00',},
         ],
         registeredLogs:[
             //et objekt på dette nivået per bruker
