@@ -14,6 +14,7 @@ button{
     padding: 25px;
     background-color: #d7c8e7;
     width: 50vw;
+    min-width: fit-content;
     justify-items: center;
 }
 p{
