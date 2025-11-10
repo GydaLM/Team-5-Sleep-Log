@@ -1,10 +1,9 @@
-//-- Marius
+//-- Marius  (og Gyda)
 function updateHomepage(){
     const qualityClass = getColour(averageQuality());
     const conditionClass = getColour(averageCondition());
     
     return /*HTML*/ `
-    <p>Optimal leggetid: <input type="time"></p>
     <div id='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>
@@ -15,4 +14,20 @@ function updateHomepage(){
     </div>
     <button class="nyLoggBtn" onclick="goTo('logInput')">Ny logg</button>
 `
+}
+
+function drawOptimalBedtime(){
+    
+    if(!model.viewstate.editBedtime){
+        return /*HTML*/ `
+        <p>Optimal leggetid: ${model.data.registeredUser.optimalBedtime}</p>
+        <button onclick="editOptimalBedtime()">Edit</button>
+        `
+    }
+    else{
+        return /*HTML*/ `
+        <p>Optimal leggetid: <input type="time" oninput="model.viewstate.optimalBedtime=this.value"></p>
+        <button onclick="saveOptimalBedtime()">Edit</button>
+        `
+    }
 }

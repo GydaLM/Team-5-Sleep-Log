@@ -51,6 +51,7 @@ const model = {
             notes:'',
         },
         optimalBedtime:'',
+        editBedtime: false,
     },
     //Her kommer data
     data:{

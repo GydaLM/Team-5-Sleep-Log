@@ -1,5 +1,9 @@
 //----Gyda
 
+function saveOptimalBedtime(){
+    
+}
+
 //average is the sum of the numbers divided on the amount of numbers
 
 //functions to find average of sleep quality, sleep length and condition during the day
