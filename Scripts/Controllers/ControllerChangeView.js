@@ -17,8 +17,8 @@ function changeView(){
         content = updateLogList();
     } else if(model.app.currentPage == 'logInput'){
         content = updateLogInput();
-    }else if(model.app.currentPage == 'statistics'){
-        content = updateStatistics();
+    }else if(model.app.currentPage == 'sleepAdvice'){
+        content = updateSleepAdvice();
     }else if(model.app.currentPage == 'logIn'){
         content = updateLogIn();
         model.app.currentUser = null;
