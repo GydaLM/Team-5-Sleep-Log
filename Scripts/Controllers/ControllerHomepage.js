@@ -1,7 +1,7 @@
 //----Gyda
 
-function saveOptimalBedtime(){
-    
+function editOptimalBedtime(){
+
 }
 
 //average is the sum of the numbers divided on the amount of numbers

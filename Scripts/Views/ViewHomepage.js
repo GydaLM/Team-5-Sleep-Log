@@ -4,6 +4,7 @@ function updateHomepage(){
     const conditionClass = getColour(averageCondition());
     
     return /*HTML*/ `
+    <div>${drawOptimalBedtime()}</div>
     <div id='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>
@@ -17,10 +18,12 @@ function updateHomepage(){
 }
 
 function drawOptimalBedtime(){
+    const currentUser = model.data.registeredUser.find(user => user.userID === model.app.currentUser);
+    const optimalBedtime = currentUser?.optimalBedtime || "-";
     
     if(!model.viewstate.editBedtime){
         return /*HTML*/ `
-        <p>Optimal leggetid: ${model.data.registeredUser.optimalBedtime}</p>
+        <p>Optimal leggetid: ${optimalBedtime}</p>
         <button onclick="editOptimalBedtime()">Edit</button>
         `
     }

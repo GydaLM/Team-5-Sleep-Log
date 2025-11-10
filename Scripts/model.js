@@ -56,7 +56,7 @@ const model = {
     //Her kommer data
     data:{
         registeredUser:[
-            {userID: 1, name:'Kenneth', password:'herSkalDetSoves', optimalBedtime: '22:00',},
+            {userID: 1, name:'Kenneth', password:'herSkalDetSoves', optimalBedtime: '',},
             {userID: 2, name:'Bjarne', password:'007', optimalBedtime: '23:00',},
         ],
         registeredLogs:[
