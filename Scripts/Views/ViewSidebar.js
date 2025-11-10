@@ -10,7 +10,7 @@ function SideBar(){
         </div>
 
         <div>
-            <h1 class="logoSidebar">ShutEye</h1>
+            <h1 class="logoSidebar" onclick="goTo('homepage')">ShutEye</h1>
         </div>
 
 
@@ -49,16 +49,16 @@ function getUserName(){
 }
 
 
-function logo(){
-     return /*HTML*/ `
-     <section>
+// function logo(){
+//      return /*HTML*/ `
+//      <section>
 
-            <button id="logo" onclick="goTo('homepage')">
-                <img src="Media/ShutEye_1.png" alt=""/>
-            </button>
+//             <button id="logo" onclick="goTo('homepage')">
+//                 <img src="Media/ShutEye_1.png" alt=""/>
+//             </button>
 
-        </section>`
-}
+//         </section>`
+// }
 
 
 
