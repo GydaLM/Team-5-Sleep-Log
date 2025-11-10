@@ -64,7 +64,8 @@ function updateLogInput(){
     </div>
 <br>
     <div class="notesWrap">
-        <label for="notes">Notater:</label><input id="notes" oninput="saveNotes(this.value)">
+    <label for="notes">Notater:</label>
+    <textarea id="notes" oninput="saveNotes(this.value)"></textarea>
     </div>
 <form>
     <button class="SaveInputBtn" onclick="saveNewLog()">Lagre</button>

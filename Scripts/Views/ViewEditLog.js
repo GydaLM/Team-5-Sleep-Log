@@ -6,46 +6,46 @@ function updateEditLog(){
     return /*HTML*/ `
         <h1>Rediger søvnlogg for ${log.date}</h1>
         <div class="inputWrap">
-            <p>Dato: <input type="date" value="${log.date}" oninput="model.viewstate.editLog.date=this.value">
-            <p>Leggetid: <input type="time" value="${log.bedtime}" oninput="model.viewstate.editLog.bedtime=this.value"></p>
-            <p>Prøvde å sovne: <input type="time" value="${log.attemptedSleep}" oninput="model.viewstate.editLog.attemptedSleep=this.value"></p>
-            <p>Sovnet: <input type="time" value="${log.fellAsleep}" oninput="model.viewstate.editLog.fellAsleep=this.value"></p>
+            <label for="editDate">Dato:</label><input id="editDate" type="date" value="${log.date}" oninput="model.viewstate.editLog.date=this.value">
+            <label for="editbedtime">Leggetid:</label><input id="editbedtime" type="time" value="${log.bedtime}" oninput="model.viewstate.editLog.bedtime=this.value">
+            <label for="editAttemptedSleep">Prøvde å sovne:</label><input id="editAttemptedSleep" type="time" value="${log.attemptedSleep}" oninput="model.viewstate.editLog.attemptedSleep=this.value">
+            <label for="editFellAsleep">Sovnet:</label><input id="editFellAsleep" type="time" value="${log.fellAsleep}" oninput="model.viewstate.editLog.fellAsleep=this.value">
         </div>
-        <br>
+
         <div class="inputWrap">
-            <p>Våknet: <input type="time" value="${log.awoken}" oninput="model.viewstate.editLog.awoken=this.value"></p>
-            <p>Stod opp: <input type="time" value="${log.gotUp}" oninput="model.viewstate.editLog.gotUp=this.value"></p>
+            <label for="editAwoken">Våknet:</label><input id="editAwoken" type="time" value="${log.awoken}" oninput="model.viewstate.editLog.awoken=this.value">
+            <label for="editGotUp">Stod opp:</label><input id="editGotUp" type="time" value="${log.gotUp}" oninput="model.viewstate.editLog.gotUp=this.value">
         </div>
-        <br>
+
         <div class="inputWrap">
-            <p>Våknet i natt: <input type="number" value="${log.sleepDisturbed}" oninput="model.viewstate.editLog.sleepDisturbed=this.value"></p>
-            <p>Tid våken: <input type="number" value="${log.timeDisturbed}" oninput="model.viewstate.editLog.timeDisturbed=this.value"></p>
-            <p>Lur-tid: <input type="number" value="${log.napTime}" oninput="model.viewstate.editLog.napTime=this.value"></p>
+            <label for="editTimeDisturbed">Våknet i natt (antall):</label><input id="editTimeDisturbed" type="number" value="${log.sleepDisturbed}" oninput="model.viewstate.editLog.sleepDisturbed=this.value">
+            <label for="editTimeawaken">Tid våken (minutter):</label><input id="editTimeawaken" type="number" value="${log.timeDisturbed}" oninput="model.viewstate.editLog.timeDisturbed=this.value">
+            <label for="editNapTime">Lur-tid (minutter):</label><input id="editNapTime" type="number" value="${log.napTime}" oninput="model.viewstate.editLog.napTime=this.value">
         </div>
-        <br>
+
         <div class="inputWrap">
             <p>Tid i seng: ${log.timeInBed}</p>
             <p>Tid sovet: ${log.timeSlept}</p>
         </div>
-        <div  class="inputWrap">
+        <div  class="inputWrap radio">
             <p>Kvalitet (5 er best):</p>
             <form>
                 ${radioButtons('quality', log.quality)}
             </form>
         </div>
-        <div  class="inputWrap">
+        <div  class="inputWrap radio">
             <p>Dagsform (5 er best):</p>
             <form>
                 ${radioButtons('condition', log.condition)}
             </form>
         </div>
-        <br>
+
         <div class="notesWrap">
-            <p>Notater:</p>
-            <textarea onchange="model.viewstate.editLog.notes=this.value">${log.notes}</textarea>
+            <label for="editnotes">Notater:</label>
+            <textarea id="editnotes" onchange="model.viewstate.editLog.notes=this.value">${log.notes}</textarea>
         </div>
-        <button onclick="saveEditedLog()">Lagre</button>
-        <button onclick="goTo('savedLog')">Avbryt</button>
+        <button class="SaveInputBtn" onclick="saveEditedLog()">Lagre</button>
+        <button class="SaveInputBtn" onclick="goTo('savedLog')">Avbryt</button>
     `
 }
 
