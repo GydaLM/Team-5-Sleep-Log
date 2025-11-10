@@ -4,10 +4,13 @@ function updateLogInput(){
     const currentUser = model.data.registeredUser.find(user => user.userID === model.app.currentUser);
     const optimalBedtime = currentUser?.optimalBedtime || "-";
     return /*HTML*/ `
-<form>
+<form class="boxwrap">
     <input class="dateinput" type="date" onchange="saveDate(this.value)">
-    <br>
-    <label>Optimal leggetid: ${optimalBedtime}</label>
+
+    <div class="inputWrap">
+        <p>Optimal leggetid:</p>
+        <p>${optimalBedtime}</p>
+    </div>
     <div class="inputWrap">
         <label for="bedtime">Leggetid:</label><input id="bedtime" type="time" oninput="saveRegisterLogBedtime(this.value)">
         <label for="attemptedSleep">Prøvde å sovne:</label><input id="attemptedSleep" type="time" oninput="saveAttemptedSleep(this.value)">
@@ -65,7 +68,6 @@ function updateLogInput(){
             <label for="condition-verygood">5</label>
         </div>
     </div>
-<br>
     <div class="notesWrap">
     <label for="notes">Notater:</label>
     <textarea id="notes" oninput="saveNotes(this.value)"></textarea>
