@@ -1,7 +1,7 @@
 const model = {
     app:{
         main: document.getElementById('main'),
-        currentPage:'logIn',
+        currentPage:'homepage',
         pages: ['homepage','logList','logInput','sleepAdvice','logIn', 'savedLog', 'editLog',],
         currentUser: 1,
         darkMode: false,
