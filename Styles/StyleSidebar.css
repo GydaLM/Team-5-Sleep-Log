@@ -61,10 +61,10 @@ header{
 }
 
 .img-moon{
-    background-image: url(../Media/darkMode.png);
+    background-image: url(../Media/moon.png);
 }
 .img-sun{
-    background-image: url(../Media/lightMode.png.png);
+    background-image: url(../Media/sun.png);
 }
 .dark-mode-button-img{
     background-repeat: no-repeat;
