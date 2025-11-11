@@ -9,6 +9,7 @@ function goTo(page) {
 
 
 function changeView(){
+    
     let content = "";
     let sidebar = "";
     if(model.app.currentPage == 'homepage'){
@@ -43,6 +44,9 @@ function changeView(){
             <section class="content">${content}</section>
         </main>
     `;
+    if(model.app.currentUser != null){
+        changeButtons();
+    }
 }
 
 

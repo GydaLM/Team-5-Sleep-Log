@@ -16,19 +16,19 @@ function SideBar(){
 
         <div class="sidebar-button-container">
 
-            <button onclick="goTo('homepage')">
+            <button class="menuButton" value="homepage" onclick="goTo('homepage')">
                 <img src="Media/home.png" alt=""/>
             </button>
 
-            <button onclick="goTo('logList')">
+            <button class="menuButton" value="logList" onclick="goTo('logList')">
                 <img src="Media/log.png" alt=""/>
             </button>
 
-            <button onclick="goTo('sleepAdvice')">
+            <button class="menuButton" value="sleepAdvice" onclick="goTo('sleepAdvice')">
                 <img src="Media/sleepiconthick.png" alt=""/>
             </button>
 
-            <button onclick="goTo('logIn')">
+            <button class="menuButton" onclick="goTo('logIn')">
                 <img src="Media/power-setting.png" alt=""/>
             </button>
 
@@ -37,6 +37,19 @@ function SideBar(){
         </div>
     </section> 
     `
+}
+
+function changeButtons(){
+    const menuButtons  = document.querySelectorAll(".menuButton");
+    console.log("menuButtons: ",menuButtons)
+    menuButtons.forEach(item => {
+        item.classList.remove("triggered");
+    })
+    menuButtons.forEach(item => {
+        if(item.value == model.app.currentPage){
+            item.classList.add("triggered")
+        }
+    })
 }
 
 function getUserName(){
