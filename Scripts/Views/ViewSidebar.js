@@ -29,7 +29,7 @@ function SideBar(){
             </button>
 
             <button onclick="goTo('logIn')">
-                <img src="Media/logOff.png" alt=""/>
+                <img src="Media/power-setting.png" alt=""/>
             </button>
 
             ${drawDarkLightButton()}
