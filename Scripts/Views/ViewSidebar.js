@@ -6,7 +6,7 @@ function SideBar(){
     <section class="sidebar-container">
         
         <div class="username-container">
-            <h3>Velkommen ${getUserName()}!</h3>
+            <h3 class="welcomeUserText">Velkommen ${getUserName()}!</h3>
         </div>
 
         <div>
