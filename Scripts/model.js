@@ -1,9 +1,9 @@
 const model = {
     app:{
         main: document.getElementById('main'),
-        currentPage:'homepage',
+        currentPage:'logIn',
         pages: ['homepage','logList','logInput','sleepAdvice','logIn', 'savedLog', 'editLog',],
-        currentUser: 1,
+        currentUser: '',
         darkMode: false,
     },
     //Her kommer viewstate
