@@ -3,7 +3,7 @@
 function updateSleepAdvice(){
     return /*HTML*/`
 
-        <h1 class="Overskrift">Vansker med å sove?</h1>
+        <h1 class="headerSleepAdvice">Vansker med å sove?</h1>
         <p class="SleepAdviceInformationBoxintro"> De fleste har problemer med å sove innimellom. <br> 
             Det er ikke farlig å ha en periode med dårlig søvn, men om du ofte har søvnproblemer som gjør at du fungerer dårlig i hverdagen, så kan det være nyttig å gjøre noen endringer. <br> 
             <br>
