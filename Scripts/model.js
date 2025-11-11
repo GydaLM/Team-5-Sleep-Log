@@ -203,7 +203,7 @@ const model = {
                         gotUp:'07:15',
                         sleepDisturbed:'1',
                         timeDisturbed:'15',
-                        timeSleptNum: 75,
+                        timeSleptNum: 150,
                         timeSlept:'7t 55min',
                         timeInBed:'9t 15min',
                         napTime:'25',

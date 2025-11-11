@@ -86,6 +86,12 @@ function averageCondition(){
     return avgRound;
 }
 
+function getSleepColour(value){
+    if(value >= 7 && value <= 9) return 'green';
+    if(value >= 6 && value < 7 || value > 9 && value <= 10) return 'yellow';
+    if(value < 6 || value > 10) return 'red';
+}
+
 //function to change current page to logInput
 // function changeToLogInput(){
 //     model.app.currentPage = 'logInput';

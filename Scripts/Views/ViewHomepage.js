@@ -3,13 +3,17 @@ function updateHomepage(){
     const qualityClass = getColour(averageQuality());
     const conditionClass = getColour(averageCondition());
     
+    const avgLength = averageLength();
+    const totalHours = avgLength.hours + avgLength.minutes / 60;
+    const lengthClass = getSleepColour(totalHours);
+    
     return /*HTML*/ `
     <div>${drawOptimalBedtime()}</div>
     <div class='mainHomepageDiv'>
         <h1>Gjennomsnitt de siste syv loggene</h1>
         <div id='statsHomepage'>
             <div class='avgDisplayHomepage ${qualityClass}'>Søvnkvalitet <br> ${averageQuality()}/5</div>
-            <div class='avgDisplayHomepage'>Søvnlengde <br>${averageLength().hours}t ${averageLength().minutes}min</div>
+            <div class='avgDisplayHomepage ${lengthClass}'>Søvnlengde <br>${averageLength().hours}t ${averageLength().minutes}min</div>
             <div class='avgDisplayHomepage ${conditionClass}'>Dagsform <br> ${averageCondition()}/5</div>
         </div>
     </div>
