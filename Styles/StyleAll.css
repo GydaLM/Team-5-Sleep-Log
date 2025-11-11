@@ -5,6 +5,7 @@ body{
     display: grid;
     justify-items: center;
     white-space: nowrap;
+    font-family: sans-serif;
 }
 button{
     cursor: pointer;
