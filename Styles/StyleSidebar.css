@@ -78,10 +78,11 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: 2px solid black;
 }
 
 .menuButton{
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: transparent;
 }
 .triggered{
