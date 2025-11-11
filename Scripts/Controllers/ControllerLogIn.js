@@ -21,3 +21,9 @@ function logIn(){
         
     if(!userFound) alert('Wrong Username or Password')
 }
+
+document.addEventListener('keydown', function(event){
+    if(event.code === 'Enter') {
+        logIn()
+    }
+});
