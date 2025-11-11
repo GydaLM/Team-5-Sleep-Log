@@ -25,7 +25,7 @@ function SideBar(){
             </button>
 
             <button onclick="goTo('sleepAdvice')">
-                <img src="Media/statisticsBar.png" alt=""/>
+                <img src="Media/sleepiconthick.png" alt=""/>
             </button>
 
             <button onclick="goTo('logIn')">
