@@ -1,10 +1,24 @@
-.informationBox{
+.SleepAdviceInformationBox1{
     background-color: #b89eda;
     border: 2px solid #9874cd;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 15px;
     margin: 10px;
+    width: 800px;
+    white-space:initial;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+.SleepAdviceInformationBox2{
+    background-color: #9874cd;
+    border: 2px solid #b89eda;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 800px;
+    white-space:initial;
+    word-wrap: break-word;
+    font-size: 15px;
 }
 .Overskrift{
     font-size: 30px;
