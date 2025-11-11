@@ -1,15 +1,27 @@
+
 .logoLoginPage{
     font-size: 40px;
-    padding: 0px;
-    margin: 0px;
-    color: #9874cd;
-    position: fixed;
+    color: #a377e6;
     top: 0;
-    align-items: center;
-    align-items: top;
     font-family: "Lobster", sans-serif;
     text-shadow: 2px 2px black;
+    text-decoration: underline;
 }
+
+.logInText{
+    font-family: sans-serif;
+    text-decoration: underline;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.logInWrapper{
+    text-align: center;
+    align-items: center;
+}
+
 .logInBtn{
     background-color: #b89eda;
     font-size: 15px;

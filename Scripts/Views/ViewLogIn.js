@@ -1,18 +1,19 @@
 function updateLogIn(){
     return /*HTML*/ `
 
-    <div class="logoLoginPage">
-        <h1>ShutEye<h1>
-    </div>
-
-    <div>This is the Log In!</div>
+    <section class="logInWrapper">
     
-    <div>
-    <input placeholder="Brukernavn" oninput="model.viewstate.logIn.name = this.value">
-    <input type="password" id="passwordField" placeholder="Passord" oninput="model.viewstate.logIn.password = this.value">
-    <button class="logInBtn" onclick="logIn()">Log in</button>
+        <div class="logoLoginPage">
+            <h1>ShutEye<h1>
+        </div>
+        
+        <div>
+            <div class="logInText">Logg inn med din bruker</div>
+            <input placeholder="Brukernavn" oninput="model.viewstate.logIn.name = this.value">
+            <input type="password" id="passwordField" placeholder="Passord" oninput="model.viewstate.logIn.password = this.value">
+            <button onclick="logIn()">Log in</button>
 
-
-    </div>
+        </div>
+    </section>
 `
 }
